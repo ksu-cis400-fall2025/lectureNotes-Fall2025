@@ -1,4 +1,5 @@
-public:: true
+#CIS400: Object-oriented design, implementation, and testing 
+Jorge Valenzuela
 
 - One project for the entered semester
 	- Milestones
