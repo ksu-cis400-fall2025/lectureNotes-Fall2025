@@ -1,5 +1,6 @@
 # CIS400: Object-oriented design, implementation, and testing
-_ALL material based on Dr. Nathan Bean's and Julie Thornton's material_
+ALL material based on Dr. Nathan Bean's and Julie Thornton's material
+
 _Jorge Valenzuela_
 
 - One project for the entire semester
