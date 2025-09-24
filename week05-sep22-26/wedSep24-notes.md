@@ -1,7 +1,10 @@
 ## UML, and Collections
 - ### Reminders
-- Tue September 23: Testing Tutorial due
-- Wed September 24: UML Tutorial due
+- Testing Tutorial due yesterday
+- Wed September 24:
+	- UML Tutorial due, and
+	- MIlestone 4 - pre release
+		-
 - Fri September 26: **Milestone 4 due**
 - ## UML for MIlestone 4
 - Relationships:
