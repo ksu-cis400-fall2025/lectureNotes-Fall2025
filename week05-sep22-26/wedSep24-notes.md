@@ -12,7 +12,9 @@
 	  type? name;
 	  ```
 	- What does it mean? name is a variable with given type, **now** is allowed to be null
+	-
 	- Why use them?
+		- when in an application there are fields or values that may not apply to all scenarios and the dfaul value suc a 0 for int, or false for bool
 	- value types can be nullable too:
 	- int? a = null;
 	- null condition operator
