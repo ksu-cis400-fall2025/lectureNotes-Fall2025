@@ -8,7 +8,7 @@
 		- All test cases **must** pass.
 		- You commit and push your code by Wednesday at 11:59 PM**.**
 		- Make a **pre-release** for Milestone 4. Follow the steps for a release using the tag and release name "**v0.4.0rc**" (rc -> release candidate).
-		- Post your release in Canvas as first submission to Milestone 4 assignment.
+		- Post your release in Canvas as first submission to Milestone 4 assignment **before 11:59pm.**
 - Fri September 26: **Milestone 4 due**
 - ---
 - ### Review
