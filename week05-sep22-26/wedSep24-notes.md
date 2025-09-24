@@ -22,7 +22,6 @@
 	  int? a = null;
 	  ```
 	- Why use them?
-		- when in an application there are fields or values that may not apply to all scenarios and the defaul value such a 0 for int, or false for bool
 		- Useful when some fields or values in an application may not apply to all scenarios.
 		- For value types like `int` or `bool`, the default values (0 or false) might not represent "no value," so nullables provide a way to explicitly represent the absence of a value.
 	-
