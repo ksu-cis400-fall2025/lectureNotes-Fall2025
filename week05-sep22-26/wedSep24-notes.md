@@ -12,16 +12,21 @@
 	  type? name;
 	  ```
 	- What does it mean? name is a variable with given type, **now** is allowed to be null
-	-
+	- So, value types can be nullable too:
+	- ```
+	  int? a = null;
+	  ```
 	- Why use them?
 		- when in an application there are fields or values that may not apply to all scenarios and the dfaul value suc a 0 for int, or false for bool
-	- value types can be nullable too:
-	- int? a = null;
+	-
 	- null condition operator
-	- Dog? d = (some value)
+	- ```
+	  Dog? d = (some value)
 	    d?.Print(); //when is Print called? (assuming we have a Print method...)
-	- if d not null, will call Print
-	    if d null, won't do anything
+	    d?.Print(); //when is Print called? (assuming we have a Print method...)
+	  ```
+	-
+	-
 - ## UML for MIlestone 4
 - Relationships:
     Realization (is-a):  implementing an interface
