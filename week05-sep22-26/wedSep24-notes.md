@@ -4,8 +4,13 @@
 - Wed September 24:
 	- UML Tutorial due, and
 	- MIlestone 4 - pre release
-		-
+		- Implement all test cases listed in the section "Specific *Required Test Cases".*
+		- All test cases **must** pass.
+		- You commit and push your code by Wednesday at 11:59 PM**.**
+		- Make a **pre-release** for Milestone 4. Follow the steps for a release using the tag and release name "**v0.4.0rc**" (rc -> release candidate).
+		- Post your release in Canvas as first submission to Milestone 4 assignment.
 - Fri September 26: **Milestone 4 due**
+- ---
 - ### Review
 	- Nullables
 	- ``` 
@@ -24,8 +29,10 @@
 	  Dog? d = (some value)
 	    d?.Print(); //when is Print called? (assuming we have a Print method...)
 	    d?.Print(); //when is Print called? (assuming we have a Print method...)
+	    // if d not null, will call Print
+	    // if d null, won't do anything
 	  ```
-	-
+	- ---
 	-
 - ## UML for MIlestone 4
 - Relationships:
