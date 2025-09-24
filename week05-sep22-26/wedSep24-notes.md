@@ -31,6 +31,7 @@
   Adds a legs count property
 - ### Steps
 	- Declare the `AnimalCollection` class implementing `ICollection<IAnimal>`.
+	- Add a private
 	- Add the `LegCount` property to sum all legs.
 	- Implement the `Count` property.
 	- Implement the `IsReadOnly` property.
