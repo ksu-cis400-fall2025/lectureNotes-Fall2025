@@ -1,11 +1,8 @@
 ## UML, and Collections
 - ### Reminders
-- **Interfaces Tutorial**: due Thursday September 18th
-- **Inheritance Tutorial**: due Friday September 19th
-- **Milestone 3**: due Friday
-	- Make sure your solution **builds**
-	- Make sure you submit the right commit + release
--
+- Tue September 23: Testing Tutorial due
+- Wed September 24: UML Tutorial due
+- Fri September 26: **Milestone 4 due**
 - ## UML for MIlestone 4
 - Relationships:
     Realization (is-a):  implementing an interface
