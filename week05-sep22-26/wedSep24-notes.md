@@ -31,7 +31,13 @@
   Adds a legs count property
 - ### Steps
 	- Declare the `AnimalCollection` class implementing `ICollection<IAnimal>`.
-	- Add a private
+		- **Why a List<T>
+			- **Dynamic sizing**: Automatically resizes as items are added
+			- **Indexed access**: O(1) random access by index.
+			- **Efficient iteration**: Optimized for `foreach` and LINQ.
+			- **Backed by an array**: Compact memory and cache-friendly.
+			- **Well-tested**: Built into the .NET runtime, highly optimized.
+	- Add a private field _animals of type List<IAnimal>
 	- Add the `LegCount` property to sum all legs.
 	- Implement the `Count` property.
 	- Implement the `IsReadOnly` property.
