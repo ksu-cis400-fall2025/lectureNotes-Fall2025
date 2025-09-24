@@ -6,6 +6,20 @@
 	- MIlestone 4 - pre release
 		-
 - Fri September 26: **Milestone 4 due**
+- ### Review
+	- Nullables
+	- ``` 
+	  type? name;
+	  ```
+	- What does it mean? name is a variable with given type, **now** is allowed to be null
+	- Why use them?
+	- value types can be nullable too:
+	- int? a = null;
+	- null condition operator
+	- Dog? d = (some value)
+	    d?.Print(); //when is Print called? (assuming we have a Print method...)
+	- if d not null, will call Print
+	    if d null, won't do anything
 - ## UML for MIlestone 4
 - Relationships:
     Realization (is-a):  implementing an interface
