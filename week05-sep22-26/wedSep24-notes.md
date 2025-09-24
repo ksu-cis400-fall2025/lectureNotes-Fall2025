@@ -1,4 +1,4 @@
-## Lecture Notes: Interfaces, Abstract Classes, Inheritance, and Casting
+## UML, and Collections
 - ### Reminders
 - **Interfaces Tutorial**: due Thursday September 18th
 - **Inheritance Tutorial**: due Friday September 19th
@@ -6,40 +6,26 @@
 	- Make sure your solution **builds**
 	- Make sure you submit the right commit + release
 -
-- ## Interfaces
-- Remind me, what's an interface?
-- Example: Logger
-- ## Abstract Classes and Inheritance
-- Remind me, what's an abstract class?
-- Example: Shirt
-- ### Abstract Classes
-- Declared with `abstract` keyword
-- Cannot create an object of that type directly
-- Often include abstract methods (no implementation)
-  
-  If any member is abstract → class must be abstract
-  
-  **Abstract class + interface**
-- An abstract class can implement an interface
-- Must declare all required members
-- Any unimplemented members remain abstract
-  
-  ---
-- ###  Concrete Class
-  
-  ```
-  public class Child : ParentClass
-  ```
-- Inherits public/protected properties and methods
-- Child does not have to do anything unless overriding
-  
-  **Overriding Methods/Properties**
-- Parent: mark member as `virtual` (allows override)
-- Child: mark member as `override` (redefines behavior)
-  
-  Do we have to override? → No
-  
-  ---
+- ## UML for MIlestone 4
+- Relationships:
+    Realization (is-a):  implementing an interface
+        dashed line with an open arrow pointing at the interface
+        Drink/Entree/Side/Combo implement IMenuItem
+- Generalization (is-a): extending a class
+        solid line with an open arrow pointing at the parent class
+        ClubSub extends Entree
+- Aggregation (has-a): 
+        open diamond with the diamond touching the collection
+        Order is a collection of IMenuItem
+- Composition (has-a):
+        closed diamond with the diamond touching the collection
+        Entree is a collection of IMenuItem
+- (and others, but this is it for now)
+- Where in our code do we have these relationships?
+- Enums? put near class that uses, but no lines
+-
+- ## Collections
+- ICollection? Order implements ICollection
 - ### Casting
   
   **Implicit vs. Explicit Casting**
