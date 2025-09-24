@@ -26,5 +26,7 @@
 -
 - ## Collections
 - ICollection? Order implements ICollection
--
+- Implementing a collection.
+- Example: AnimalCollection
+  Adds a legs count property
 -
