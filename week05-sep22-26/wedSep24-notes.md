@@ -30,8 +30,6 @@
 - Example: AnimalCollection
   Adds a legs count property
 - ### Steps
-	- Of course — here’s the **step list only**, without code:
-	- Define the `IAnimal` interface with `Sound()` and `Legs { get; set; }`.
 	- Declare the `AnimalCollection` class implementing `ICollection<IAnimal>`.
 	- Add the `LegCount` property to sum all legs.
 	- Implement the `Count` property.
