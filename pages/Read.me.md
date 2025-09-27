@@ -29,5 +29,5 @@
   |-- .gitignore
   |-- README.md
   |-- Project1/
-  |-- .git/
-  |-- MySolution.sln
+           |-- .git/
+           |-- MySolution.sln
