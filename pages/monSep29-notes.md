@@ -1,14 +1,12 @@
-- Here’s a polished version of your lecture script and student notes. I’ve standardized formatting, improved grammar and clarity, and adjusted titles and subsections so it flows smoothly for both you (as a lecture script) and students (as reference notes).
-  
-  ---
-- # Exam 1 Information
+# Reminders
+- ## Exam 1 Information
   
   **Date:** Wednesday, October 1 (during class)
   
   **Format:** On paper, closed notes, no computers
 - No tutorials or milestones this week
 	- We will begin the GUI with WPF next week
-- All previous tutorials and milestones must be submitted by **Friday, September 27**
+- All previous tutorials and milestones must be submitted by **Friday, October 3**
 	- Friday will be a **work day** if you need help finishing assignments
 	- You may also work ahead on next week’s module
 	  
@@ -20,7 +18,7 @@
 	- Writing code
 	- Drawing and interpreting UML diagrams
 	  
-	  👉 See **Canvas Modules** for the vocabulary list. Be familiar with how and when terms are used.
+	  See **Canvas Modules** for the vocabulary list. Be familiar with how and when terms are used.
 	  
 	  ---
 - # Major Topics
