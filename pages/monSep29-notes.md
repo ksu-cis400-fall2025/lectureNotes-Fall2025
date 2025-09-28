@@ -23,27 +23,27 @@
 	  ---
 - # Major Topics
 - ### 1. Encapsulation
-- Writing general classes with fields, properties, methods, and constructors
-- Creating and using objects
+	- Writing general classes with fields, properties, methods, and constructors
+	- Creating and using objects
 - ### 2. Properties
-- When a private backing field is needed
-- Enforcing bounds
-- Accessors and derived properties
+	- When a private backing field is needed
+	- Enforcing bounds
+	- Accessors and derived properties
 - ### 3. Interfaces
-- Declaring and implementing interfaces
-- Why and when to use them
+	- Declaring and implementing interfaces
+	- Why and when to use them
 - ### 4. Inheritance
-- Refactoring to create base and child classes
-- Extending a class
-- What is inherited
-- `virtual` and `override` keywords
-- How constructors work
-- Why inheritance is useful
+	- Refactoring to create base and child classes
+	- Extending a class
+	- What is inherited
+	- `virtual` and `override` keywords
+	- How constructors work
+	- Why inheritance is useful
 - ### 5. Abstract Classes
-- Declaring and extending
-- What is inherited
-- Abstract vs. virtual methods
-- How they differ from interfaces
+	- Declaring and extending
+	- What is inherited
+	- Abstract vs. virtual methods
+	- How they differ from interfaces
 - ### 6. Unit Testing
 - `[Fact]` and `[Theory]`
 - Designing effective test cases
@@ -72,8 +72,6 @@
   
   Work through the **practice exam** before test day.
   
-  👉 See **Exam Materials** or **Weekly Class Materials** in Canvas for the practice exam solutions.
+  See **Exam Materials** or **Weekly Class Materials** in Canvas for the practice exam solutions.
   
   ---
-  
-  Would you like me to also **reformat this into a handout-style student version** (shorter bullet points, less lecture-script tone) so you can give it directly to students?
