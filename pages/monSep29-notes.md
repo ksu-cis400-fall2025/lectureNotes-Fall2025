@@ -85,11 +85,11 @@
 -
 - ### 7. UML Diagrams
 - Interpreting and drawing UML diagrams
-- Include **all members** (private, protected, etc.)
-- Associations:
+- Include **all members** (public (+), private (-), protected (hash-tag), etc.)
+- Relationships:
 	- **Realization** (implements interface): dashed line, arrow toward interface
-	- **Aggregation/Composition** (collection of objects): diamond on collection side, multiplicities (`1`, `0..*`, or specific number)
 	- **Generalization** (extends a class): arrow toward base class
+	- **Aggregation/Composition** (collection of objects): diamond on collection side, multiplicities (`1`, `0..*`, or specific number)
 - Marking details:
 	- Properties: `<<get, init>>` (no need to show bounds or defaults)
 	- Static: underline
