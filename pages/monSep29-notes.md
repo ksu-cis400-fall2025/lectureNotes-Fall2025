@@ -29,7 +29,6 @@
 	- When a private backing field is needed
 	- Enforcing bounds
 - Code Example
-  collapsed:: true
 	- ```
 	  private int _score;
 	  
@@ -47,7 +46,16 @@
 	  ```
 	- Accessors and derived properties
 - **Derived properties**
-	- properties whose values are calculated from other data, not stored directly.
+	- Properties whose values are calculated from other data, not stored directly.
+	- They don’t need a backing field, since they’re computed on the fly
+- Code Example 2
+- ```
+  // Here, FullName is derived from FirstName and LastName.
+  public string FullName
+  {
+      get { return FirstName + " " + LastName; }
+  }
+  ```
 - ### 3. Interfaces
 	- Declaring and implementing interfaces
 	- Why and when to use them
