@@ -29,6 +29,7 @@
 	- When a private backing field is needed
 	- Enforcing bounds
 - Code Example
+  collapsed:: true
 	- ```
 	  private int _score;
 	  
@@ -45,6 +46,8 @@
 	  
 	  ```
 	- Accessors and derived properties
+- **Derived properties**
+	- properties whose values are calculated from other data, not stored directly.
 - ### 3. Interfaces
 	- Declaring and implementing interfaces
 	- Why and when to use them
