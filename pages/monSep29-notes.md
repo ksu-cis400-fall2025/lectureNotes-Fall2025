@@ -28,16 +28,18 @@
 - ### 2. Properties
 	- When a private backing field is needed
 	- Enforcing bounds
+- Code Example
 	- ```
-	  private int _age;
+	  private int _score;
 	  
-	  public int Age
+	  public int Score
 	  {
-	      get { return _age; }
+	      get { return _score; }
 	      set 
 	      {
-	          if (value >= 0)   // validation
-	              _age = value;
+	          if (value < 0) _score = 0;          // lower bound
+	          else if (value > 100) _score = 100; // upper bound
+	          else _score = value;
 	      }
 	  }
 	  
