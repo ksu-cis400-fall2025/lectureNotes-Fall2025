@@ -29,7 +29,6 @@
 	- When a private backing field is needed
 	- Enforcing bounds
 - Code Example 1
-  collapsed:: true
 	- ```
 	  private int _score;
 	  
