@@ -28,7 +28,20 @@
 - ### 2. Properties
 	- When a private backing field is needed
 	- Enforcing bounds
-	-
+	- ```
+	  private int _age;
+	  
+	  public int Age
+	  {
+	      get { return _age; }
+	      set 
+	      {
+	          if (value >= 0)   // validation
+	              _age = value;
+	      }
+	  }
+	  
+	  ```
 	- Accessors and derived properties
 - ### 3. Interfaces
 	- Declaring and implementing interfaces
