@@ -49,7 +49,6 @@
 	- Properties whose values are calculated from other data, not stored directly.
 	- They don’t need a backing field, since they’re computed on the fly
 - Code Example 2
-  collapsed:: true
 	- ```
 	  // Here, FullName is derived from FirstName and LastName.
 	  public string FullName
