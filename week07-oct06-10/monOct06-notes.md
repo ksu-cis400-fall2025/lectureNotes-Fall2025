@@ -11,9 +11,8 @@
 - Below C: 8 students
   
   **Discussion:**
-- We will go over some of the problems from the exam to clarify common mistakes and important concepts.
-  
-  ---
+	- We will go over some of the problems from the exam to clarify common mistakes and important concepts.
+- ---
 - # Reminders
 - **Tuesday – WPF Tutorial**
 	- Build a GUI
@@ -29,10 +28,10 @@
 - # WPF Applications Overview
   
   **Structure:**
-- **MainWindow**: Launches when the program starts
-- **UserControls**: Can be placed on the MainWindow or inside another UserControl
-  
-  **Layouts:**
+	- **MainWindow**: Launches when the program starts
+	- **UserControls**: Can be placed on the MainWindow or inside another UserControl
+-
+- **Layouts:**
 - Controls are organized using layout containers. Most common:
 	- **Grid** – flexible arrangement of rows and columns
 	- **StackPanel** – vertical or horizontal stacking
@@ -114,6 +113,5 @@
 		  <ListView ItemsSource="{Binding}"/>
 		  ```
 -
-- What does `{Binding}` mean?
-  
-  ---
+	- What does `{Binding}` mean?
+- ---
