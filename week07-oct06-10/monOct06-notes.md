@@ -14,13 +14,12 @@
 - We will go over some of the problems from the exam to clarify common mistakes and important concepts.
   
   ---
-- # This Week’s Schedule
-  
-  **Today – WPF Tutorial**
-- Build a GUI
-- Work with various controls
-  
-  **Tuesday – Resources and Styles Tutorial**
+- # Reminders
+- **Today – WPF Tutorial**
+	- Build a GUI
+	- Work with various controls
+	  
+	  **Tuesday – Resources and Styles Tutorial**
 - Add customization to all controls of a specific type
 - Similar concept to CSS styling
   
