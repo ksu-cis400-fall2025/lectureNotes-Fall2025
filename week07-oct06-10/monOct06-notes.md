@@ -61,8 +61,8 @@
 	- How to add a new project?
 	- How to change the startup project?
 - **Sample GUI Review:**
-- Examine the picture of the sample GUI
-- Predict what it will do when it runs
+	- Examine the picture of the sample GUI
+	- Predict what it will do when it runs
 - Note missing functionality for now:
 	- Correct display of order subtotal, total, and tax
 	- Editing menu items
@@ -73,47 +73,47 @@
 - # Building the Menu Control
   
   **Considerations:**
-- What layout should you use?
-- What controls are needed?
-- How will this affect spacing of other components?
-  
-  ---
+	- What layout should you use?
+	- What controls are needed?
+	- How will this affect spacing of other components?
+	  
+	  ---
 - # Building the Order Control
   
   **Considerations:**
-- What layout should you use?
-- What controls are needed?
-  
-  ---
+	- What layout should you use?
+	- What controls are needed?
+- ---
 - # MainWindow Layout
   
   **Tasks:**
-- How to position the menu and order summary
-- How to place buttons at the bottom
-  
-  **Adding a Custom Control:**
-  
-  ```
-  <local:YourControlClass/>
-  ```
-- Can specify layout properties such as `Grid.Row`, etc.
-  
-  ---
+	- How to position the menu and order summary
+	- How to place buttons at the bottom
+	  
+	  **Adding a Custom Control:**
+	  
+	  ```
+	  <local:YourControlClass/>
+	  ```
+-
+	- Can specify layout properties such as `Grid.Row`, etc.
+	  
+	  ---
 - # Understanding DataContext
   
   **Concept:**
-- DataContext provides the source for data binding
-- Example: `ObservableCollection<IMenuItem>`
-  
-  **Order Control:**
-- Should contain a `ListView`
-- Questions to consider:
-	- What should the DataContext be?
-	- Where should it be set?
-	  
-	  ```
-	  <ListView ItemsSource="{Binding}"/>
-	  ```
+	- DataContext provides the source for data binding
+	- Example: `ObservableCollection<IMenuItem>`
+	- **Order Control:**
+	- Should contain a `ListView`
+	- Questions to consider:
+		- What should the DataContext be?
+		- Where should it be set?
+		  
+		  ```
+		  <ListView ItemsSource="{Binding}"/>
+		  ```
+-
 - What does `{Binding}` mean?
   
   ---
