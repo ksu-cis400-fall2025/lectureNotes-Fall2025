@@ -15,19 +15,17 @@
   
   ---
 - # Reminders
-- **Today – WPF Tutorial**
+- **Tuesday – WPF Tutorial**
 	- Build a GUI
 	- Work with various controls
+- **Wednesday – Resources and Styles Tutorial**
+	- Add customization to all controls of a specific type
+	- Similar concept to CSS styling
+- **Milestone 5**
+	- Build the shell of the "Point of Sale" GUI for Sub Hero
+	- Clicking menu items should add them to the order display
 	  
-	  **Tuesday – Resources and Styles Tutorial**
-- Add customization to all controls of a specific type
-- Similar concept to CSS styling
-  
-  **Milestone 5**
-- Build the shell of the "Point of Sale" GUI for Sub Hero
-- Clicking menu items should add them to the order display
-  
-  ---
+	  ---
 - # WPF Applications Overview
   
   **Structure:**
@@ -60,10 +58,9 @@
 - # Starting Milestone 5
   
   **Project Setup:**
-- How to add a new project?
-- How to change the startup project?
-  
-  **Sample GUI Review:**
+	- How to add a new project?
+	- How to change the startup project?
+- **Sample GUI Review:**
 - Examine the picture of the sample GUI
 - Predict what it will do when it runs
 - Note missing functionality for now:
