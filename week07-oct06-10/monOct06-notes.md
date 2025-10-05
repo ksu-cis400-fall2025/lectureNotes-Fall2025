@@ -31,21 +31,18 @@
 	- **MainWindow**: Launches when the program starts
 	- **UserControls**: Can be placed on the MainWindow or inside another UserControl
 -
-- **Layouts:**
-- Controls are organized using layout containers. Most common:
-	- **Grid** – flexible arrangement of rows and columns
-	- **StackPanel** – vertical or horizontal stacking
-	- **DockPanel** – dock controls to top, bottom, left, right, or fill
-	  
-	  **Question:** When would you choose each layout?
-	  
-	  **Common Controls:**
+- **Layouts:** Controls are organized using layout containers.
+	- Most common layout containers:
+		- **Grid** – flexible arrangement of rows and columns
+		- **StackPanel** – vertical or horizontal stacking
+		- **DockPanel** – dock controls to top, bottom, left, right, or fill
+	- Question: When would you choose each layout?
+- **Common Controls:**
 - Button
 - TextBlock (display text)
 - TextBox (user input)
 - ListView (display collections)
 - Later: CheckBox, RadioButton, etc.
-  
   **Customization:**
 - Control appearance can be modified using Styles and Templates
   
