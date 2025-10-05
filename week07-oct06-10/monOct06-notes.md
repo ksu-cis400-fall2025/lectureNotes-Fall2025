@@ -38,15 +38,16 @@
 		- **DockPanel** – dock controls to top, bottom, left, right, or fill
 	- Question: When would you choose each layout?
 - **Common Controls:**
-- Button
-- TextBlock (display text)
-- TextBox (user input)
-- ListView (display collections)
-- Later: CheckBox, RadioButton, etc.
-  **Customization:**
-- Control appearance can be modified using Styles and Templates
-  
-  **Resources for Learning:**
+	- Button
+	- TextBlock (display text)
+	- TextBox (user input)
+	- ListView (display collections)
+	- Later: CheckBox, RadioButton, etc.
+-
+- **Customization:**
+	- Control appearance can be modified using Styles and Templates
+-
+- **Resources for Learning:**
   
   [WPF: How to create and apply a style](https://learn.microsoft.com/en-us/dotnet/desktop/wpf/controls/how-to-create-apply-style?view=netdesktop-8.0)
   
@@ -72,8 +73,7 @@
 	- What layout should you use?
 	- What controls are needed?
 	- How will this affect spacing of other components?
-	  
-	  ---
+- ---
 - # Building the Order Control
   
   **Considerations:**
