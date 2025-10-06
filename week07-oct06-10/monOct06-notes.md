@@ -100,6 +100,9 @@
   **Concept:**
 	- DataContext provides the source for data binding
 	- Example: `ObservableCollection<IMenuItem>`
+	- **DataContext** is a **property** available on most WPF/XAML UI elements.
+	- It holds a **reference to an object** that serves as the data source for bindings within that element (and its children).
+	- When you set the DataContext, all `{Binding}` expressions inside that element look for their data in that object by default.
 	- **Order Control:**
 		- Should contain a `ListView`
 		- Questions to consider:
