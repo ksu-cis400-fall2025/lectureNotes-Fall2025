@@ -70,7 +70,7 @@
 - # Building the Menu Control
   
   **Considerations:**
-	- What layout should you use?
+	- What layout should you use? Grid, StackPanel, or DockPanel?
 	- What controls are needed?
 	- How will this affect spacing of other components?
 - ---
