@@ -1,8 +1,8 @@
 # Exam 1 Discussion
 
 **Across both sections:**
-- Average: 81/100
-- High: 98/100
+- Average: 84.5/100
+- High: 100/100
   
   **Grades:**
 - A (90–100): 14 students
