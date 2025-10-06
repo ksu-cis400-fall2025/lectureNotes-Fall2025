@@ -5,10 +5,10 @@
 - High: 100/100
   
   **Grades:**
-- A (90–100): 14 students
-- B (80–89): 19 students
-- C (70–79): 7 students
-- Below C: 8 students
+- A (90–100): 23 students
+- B (80–89): 13 students
+- C (70–79): 5 students
+- Below C: 6 students
   
   **Discussion:**
 	- We will go over some of the problems from the exam to clarify common mistakes and important concepts.
