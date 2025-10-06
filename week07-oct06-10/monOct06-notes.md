@@ -58,7 +58,7 @@
 	- How to add a new project?
 	- How to change the startup project?
 - **Sample GUI Review:**
-	- Examine the picture of the sample GUI
+	- Examine the sample GUI
 	- Predict what it will do when it runs
 - Note missing functionality for now:
 	- Correct display of order subtotal, total, and tax
