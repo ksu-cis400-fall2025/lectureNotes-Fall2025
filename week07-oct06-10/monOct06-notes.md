@@ -89,7 +89,7 @@
 	  **Adding a Custom Control:**
 	  
 	  ```
-	  <local:YourControlClass/>
+	  <local:YourControlClass Grid.Row="0" Grid.Column="1"></local:YourControlClass>
 	  ```
 -
 	- Can specify layout properties such as `Grid.Row`, etc.
@@ -101,14 +101,14 @@
 	- DataContext provides the source for data binding
 	- Example: `ObservableCollection<IMenuItem>`
 	- **Order Control:**
-	- Should contain a `ListView`
-	- Questions to consider:
-		- What should the DataContext be?
-		- Where should it be set?
-		  
-		  ```
-		  <ListView ItemsSource="{Binding}"/>
-		  ```
+		- Should contain a `ListView`
+		- Questions to consider:
+			- What should the DataContext be?
+			- Where should it be set?
+			  
+			  ```
+			  <ListView ItemsSource="{Binding}"/>
+			  ```
 -
 	- What does `{Binding}` mean?
 - ---
