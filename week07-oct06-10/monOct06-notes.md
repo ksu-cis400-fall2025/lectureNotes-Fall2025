@@ -115,7 +115,6 @@
 			  ```
 -
 	- What does `{Binding}` mean?
-	  collapsed:: true
 		- In C# XAML, **binding** connects a UI element’s property to a data source so that the UI automatically reflects changes in the data and vice versa. In the example `<ListView ItemsSource="{Binding}"/>`, the `{Binding}` expression tells the ListView to use the **current DataContext** (usually an object or collection) as its source. This means the ListView will display the items from whatever collection the DataContext represents, without needing explicit code to populate it. Binding is central to the **MVVM pattern**, enabling separation between the UI and underlying data logic.
 	-
 - ---
