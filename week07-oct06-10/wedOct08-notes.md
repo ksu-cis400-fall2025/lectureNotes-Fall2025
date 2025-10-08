@@ -13,7 +13,7 @@
   ---
 - ## This Week
   
-  **Friday:** Milestone 5 due
+  This **Friday:** Milestone 5 due
   ---
 - ## Types of Layouts
 - **StackPanel**
