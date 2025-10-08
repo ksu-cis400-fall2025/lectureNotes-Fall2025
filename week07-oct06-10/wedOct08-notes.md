@@ -1,5 +1,4 @@
 ## Next Week
-collapsed:: true
 	- **Two tutorials** (Monday and Tuesday)
 	- **Milestone 6** will be smaller —
 	  
