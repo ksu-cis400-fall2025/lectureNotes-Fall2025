@@ -1,12 +1,12 @@
 ## Next Week
-	- **Two tutorials** (Monday and Tuesday)
-	- **Milestone 6** will be smaller —
+	**Two tutorials** (Monday and Tuesday)
+	**Milestone 6** will be smaller —
 	  
-	  → **Due next Thursday**
+	  **Due next Thursday**
 	  
-	  → We’ll discuss it **in class on Monday and Wednesday**
+	  We’ll discuss it **in class on Monday and Wednesday**
 	  
-	  → The goal is to help everyone finish the milestone so you can **enjoy the 3-day weekend**
+	  The goal is to help everyone finish the milestone so you can **enjoy the 3-day weekend**
 	  
 	  **No class next Friday (October 17)**
 	  
