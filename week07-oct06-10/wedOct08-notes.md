@@ -12,7 +12,7 @@
 	  
 	  ---
 - ## This Week
-  collapsed:: true
+  
 	- This **Friday:** Milestone 5 due
 	  ---
 - ## Today
