@@ -15,6 +15,7 @@
   
   This **Friday:** Milestone 5 due
   ---
+-
 - ## Types of Layouts
 - **StackPanel**
 	- Arranges elements in a single line (vertical or horizontal)
@@ -90,9 +91,7 @@
 	  Both `TextBlock` elements automatically use the `Person` object as their data source because it’s set as the window’s `DataContext`.
 - Where do we set it?
 	- We’ll use an **ObservableCollection<IMenuItem>**, typically set in the **MainWindow constructor**.
-	- #### **Where do we set it?**
-	  
-	  You can set the `DataContext` in several places:
+	- You can set the `DataContext` in several places:
 	- **In XAML**, using a resource or ViewModel:
 	  
 	  ```
@@ -114,33 +113,29 @@
 	  ```
 	  
 	  ---
-- Here’s a concise explanation for your lecture or notes — clear for students learning WPF:
-  
-  ---
-- ---
 - ## Handling Button Clicks
   
   How can we add items to the collection when a button is clicked?
-- Assign **names** to all menu buttons in the XAML.
-- Use a single **event handler** for all button clicks.
-  
-  Example:
-  
-  ```
-  private void ClickEventHandler(object sender, RoutedEventArgs e)
-  {
-    // sender is the button that triggered the event
-    if (sender is Button b)
-    {
-        if (DataContext is ObservableCollection<IMenuItem> order)
-        {
-            if (b.Name == "CustomSandwichCtrl")
-            {
-                order.Add(new CustomSandwich());
-            }
-        }
-    }
-  }
-  ```
-  
-  ---
+	- Assign **names** to all menu buttons in the XAML.
+	- Use a single **event handler** for all button clicks.
+	  
+	  Example:
+	  
+	  ```
+	  private void ClickEventHandler(object sender, RoutedEventArgs e)
+	  {
+	    // sender is the button that triggered the event
+	    if (sender is Button b)
+	    {
+	        if (DataContext is ObservableCollection<IMenuItem> order)
+	        {
+	            if (b.Name == "CustomSandwichCtrl")
+	            {
+	                order.Add(new CustomSandwich());
+	            }
+	        }
+	    }
+	  }
+	  ```
+	  
+	  ---
