@@ -60,12 +60,88 @@
 	  ---
 - ## DataContext
 - What is `DataContext`?
+	- `DataContext` is an **object that provides the data source for data binding** in WPF.
+	  
+	  It tells UI elements *where to look* for the properties or data they should display or bind to.
+	- #### **How does it work?**
+	- When you set a `DataContext` on a control, **all its child elements automatically inherit** that same context (unless they have their own `DataContext`).
+	- This allows you to bind UI elements to properties of the same object without having to specify the full path every time.
+	  
+	  **Example:**
+	  
+	  ```
+	  // In code-behind
+	  this.DataContext = new Person { Name = "Alice", Age = 25 };
+	  ```
+	  
+	  Then, in XAML:
+	  
+	  ```
+	  <TextBlock Text="{Binding Name}"/>
+	  <TextBlock Text="{Binding Age}"/>
+	  ```
+	  
+	  Both `TextBlock` elements automatically use the `Person` object as their data source because it’s set as the window’s `DataContext`.
+	-
 - How does it work?
 - Where do we set it?
   
   We’ll use an **ObservableCollection<IMenuItem>**, typically set in the **MainWindow constructor**.
+- Here’s a concise explanation for your lecture or notes — clear for students learning WPF:
   
   ---
+- ### **DataContext in WPF**
+- #### **What is `DataContext`?**
+  
+  `DataContext` is an **object that provides the data source for data binding** in WPF.
+  
+  It tells UI elements *where to look* for the properties or data they should display or bind to.
+- #### **How does it work?**
+- When you set a `DataContext` on a control, **all its child elements automatically inherit** that same context (unless they have their own `DataContext`).
+- This allows you to bind UI elements to properties of the same object without having to specify the full path every time.
+  
+  **Example:**
+  
+  ```
+  // In code-behind
+  this.DataContext = new Person { Name = "Alice", Age = 25 };
+  ```
+  
+  Then, in XAML:
+  
+  ```
+  <TextBlock Text="{Binding Name}"/>
+  <TextBlock Text="{Binding Age}"/>
+  ```
+  
+  Both `TextBlock` elements automatically use the `Person` object as their data source because it’s set as the window’s `DataContext`.
+- #### **Where do we set it?**
+  
+  You can set the `DataContext` in several places:
+- **In XAML**, using a resource or ViewModel:
+  
+  ```
+  <Window.DataContext>
+    <local:MainViewModel/>
+  </Window.DataContext>
+  ```
+- **In the code-behind** (commonly in the constructor or `Loaded` event):
+  
+  ```
+  DataContext = new MainViewModel();
+  ```
+- **At the control level**, if only a part of the UI needs a different source:
+  
+  ```
+  <StackPanel DataContext="{Binding SelectedItem}">
+    <TextBlock Text="{Binding Name}"/>
+  </StackPanel>
+  ```
+  
+  ---
+  
+  Would you like me to add a short **“mental model”** explanation (e.g., comparing `DataContext` to a shared reference or scope for bindings)? It can help students grasp *why* it behaves that way.
+- ---
 - ## Handling Button Clicks
   
   How can we add items to the collection when a button is clicked?
