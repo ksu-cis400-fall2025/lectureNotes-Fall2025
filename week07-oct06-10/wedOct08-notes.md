@@ -30,7 +30,6 @@ collapsed:: true
 		  
 		  ---
 	- ## Creating the Menu Control
-	  collapsed:: true
 		- What kind of **layout** will you use?
 		- What kinds of **controls** will you have?
 		- Do you need to worry about **spacing** for other components?
