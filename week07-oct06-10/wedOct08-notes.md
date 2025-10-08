@@ -40,6 +40,7 @@
   ```
   <ListView ItemsSource="{Binding}"/>
   ```
+-
 - **Question:** What does the `"Binding"` mean?
   
   ---
@@ -52,10 +53,11 @@
   ```
   <local:YourControlClass/>
   ```
-  
-  You can specify properties such as `Grid.Row`, `Grid.Column`, etc., as usual.
-  
-  ---
+	-
+	- **Remember:**
+	- You can specify properties such as `Grid.Row`, `Grid.Column`, etc.
+	  
+	  ---
 - ## DataContext
 - What is `DataContext`?
 - How does it work?
