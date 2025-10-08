@@ -4,7 +4,7 @@
   
   → **Due next Thursday**
   
-  → We’ll walk through most of it **in class on Monday and Wednesday**
+  → We’ll discuss it **in class on Monday and Wednesday**
   
   → The goal is to help everyone finish the milestone so you can **enjoy the 3-day weekend**
   
