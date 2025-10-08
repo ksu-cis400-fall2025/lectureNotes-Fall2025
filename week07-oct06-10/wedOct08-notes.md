@@ -15,7 +15,13 @@
   
   This **Friday:** Milestone 5 due
   ---
--
+- ## Today
+	- Layouts
+	- Menu Control
+	- Order Control
+	- Main WIndow
+	- Data Context
+	- Button Clicks
 - ## Types of Layouts
 - **StackPanel**
 	- Arranges elements in a single line (vertical or horizontal)
@@ -114,6 +120,7 @@
 	  
 	  ---
 - ## Handling Button Clicks
+  collapsed:: true
   
   How can we add items to the collection when a button is clicked?
 	- Assign **names** to all menu buttons in the XAML.
