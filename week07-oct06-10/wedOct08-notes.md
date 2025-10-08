@@ -1,6 +1,6 @@
 ## Next Week
 - **Two tutorials** (Monday and Tuesday)
-- **Milestone 6** will be smaller — no UML or testing
+- **Milestone 6** will be smaller —
   
   → **Due next Thursday**
   
