@@ -36,6 +36,7 @@ collapsed:: true
 		  
 		  ---
 	- ## Creating the Order Control
+	  collapsed:: true
 		- What kind of **layout** will you use?
 		- What kinds of **controls** will you have?
 		- This control should include a **ListView**
@@ -48,7 +49,6 @@ collapsed:: true
 		  
 		  ---
 	- ## Creating the Main Window
-	  collapsed:: true
 		- How should you lay out the **menu** and the **order summary**?
 		- How can you place the **buttons at the bottom**?
 		  
@@ -63,17 +63,12 @@ collapsed:: true
 			  
 			  ---
 	- ## DataContext
-	  collapsed:: true
-		- collapsed:: true
-		  
-		  What is `DataContext`?
+		- What is `DataContext`?
 			- `DataContext` is an **object that provides the data source for data binding** in WPF.
 			  
 			  It tells UI elements *where to look* for the properties or data they should display or bind to.
 			-
-		- collapsed:: true
-		  
-		  How does it work?
+		- How does it work?
 			- #### **How does it work?**
 			- When you set a `DataContext` on a control, **all its child elements automatically inherit** that same context (unless they have their own `DataContext`).
 			- This allows you to bind UI elements to properties of the same object without having to specify the full path every time.
@@ -94,7 +89,6 @@ collapsed:: true
 			  
 			  Both `TextBlock` elements automatically use the `Person` object as their data source because it’s set as the window’s `DataContext`.
 		- Where do we set it?
-		  collapsed:: true
 			- We’ll use an **ObservableCollection<IMenuItem>**, typically set in the **MainWindow constructor**.
 			- You can set the `DataContext` in several places:
 			- **In XAML**, using a resource or ViewModel:
