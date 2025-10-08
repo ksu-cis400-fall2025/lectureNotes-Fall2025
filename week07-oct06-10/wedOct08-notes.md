@@ -1,13 +1,8 @@
 ## Next Week
-<<<<<<< HEAD
 	- **Two tutorials** (Monday and Tuesday)
-	- **Milestone 6** will be smaller —
-=======
-	**Two tutorials** (Monday and Tuesday)
-	**Milestone 6** will be smaller —
->>>>>>> 10d0d837277701bef765970e76733fdd7da6560d
-	  
-	  **Due next Thursday**
+	- **Milestone 6** will be smaller
+	- **Two tutorials** (Monday and Tuesday)
+	  **Milestone 6** will be smaller: Due next Thursday**
 	  
 	  We’ll discuss it **in class on Monday and Wednesday**
 	  
@@ -17,7 +12,6 @@
 	  
 	  ---
 - ## This Week
-  
 	- This **Friday:** Milestone 5 due
 	  ---
 - ## Today
