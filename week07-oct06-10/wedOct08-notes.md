@@ -92,5 +92,3 @@
   ```
   
   ---
-  
-  Would you like me to make it **slightly more instructor-scripted** (e.g., adding short discussion prompts or “ask students” cues) or keep it in this **clean lecture-note format**?
