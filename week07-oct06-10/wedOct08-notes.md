@@ -113,7 +113,6 @@ collapsed:: true
 			  
 			  ---
 	- ## Handling Button Clicks
-	  collapsed:: true
 		- Assign **names** to all menu buttons in the XAML.
 		- Use a single **event handler** for all button clicks.
 		  
