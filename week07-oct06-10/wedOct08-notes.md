@@ -36,7 +36,6 @@ collapsed:: true
 		  
 		  ---
 	- ## Creating the Order Control
-	  collapsed:: true
 		- What kind of **layout** will you use?
 		- What kinds of **controls** will you have?
 		- This control should include a **ListView**
