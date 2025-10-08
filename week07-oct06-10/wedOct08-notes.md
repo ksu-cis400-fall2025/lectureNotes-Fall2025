@@ -119,8 +119,7 @@
 		  
 		  ---
 - ## Handling Button Clicks
-  
-  How can we add items to the collection when a button is clicked?
+  collapsed:: true
 	- Assign **names** to all menu buttons in the XAML.
 	- Use a single **event handler** for all button clicks.
 	  
@@ -142,5 +141,6 @@
 	    }
 	  }
 	  ```
-	  
-	  ---
+	-
+	- How can we add items to the collection when a button is clicked?
+	- ---
