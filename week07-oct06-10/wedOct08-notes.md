@@ -14,16 +14,16 @@
 - ## This Week
   
   **Friday:** Milestone 5 due
-  
-  → See demo
-  
   ---
 - ## Types of Layouts
-- **StackPanel** – arranges elements in a single line (vertical or horizontal)
-- **DockPanel** – docks elements to the top, bottom, left, or right; the last added element fills the remaining space
-- **Grid** – organizes elements in rows and columns
-  
-  **→ When should you use each?**
+- **StackPanel**
+	- Arranges elements in a single line (vertical or horizontal)
+- **DockPanel**
+	- Docks elements to the top, bottom, left, or right; the last added element fills the remaining space
+- **Grid**
+	- Organizes elements in rows and columns
+-
+- **→ When should you use each?**
   
   ---
 - ## Creating the Menu Control
@@ -40,8 +40,7 @@
   ```
   <ListView ItemsSource="{Binding}"/>
   ```
-  
-  **Question:** What does the `"Binding"` mean?
+- **Question:** What does the `"Binding"` mean?
   
   ---
 - ## Creating the Main Window
