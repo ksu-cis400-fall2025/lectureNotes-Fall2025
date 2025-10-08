@@ -1,120 +1,95 @@
-# Exam 1 Discussion
-
-**Across both sections:**
-- Average: 84.5/100
-- High: 100/100
+## Next Week
+- **Two tutorials** (Monday and Tuesday)
+- **Milestone 6** will be smaller — no UML or testing
   
-  **Grades:**
-- A (90–100): 23 students
-- B (80–89): 13 students
-- C (70–79): 5 students
-- Below C: 6 students
+  → **Due next Thursday**
   
-  **Discussion:**
-	- We will go over some of the problems from the exam to clarify common mistakes and important concepts.
-- ---
-- # Reminders
-- **Tuesday – WPF Tutorial**
-	- Build a GUI
-	- Work with various controls
-- **Wednesday – Resources and Styles Tutorial**
-	- Add customization to all controls of a specific type
-	- Similar concept to CSS styling
-- **Milestone 5**
-	- Build the shell of the "Point of Sale" GUI for Sub Hero
-	- Clicking menu items should add them to the order display
-	  
-	  ---
-- # WPF Applications Overview
+  → We’ll walk through most of it **in class on Monday and Wednesday**
   
-  **Structure:**
-	- **MainWindow**: Launches when the program starts
-	- **UserControls**: Can be placed on the MainWindow or inside another UserControl
--
-- **Layouts:** Controls are organized using layout containers.
-	- Most common layout containers:
-		- **Grid** – flexible arrangement of rows and columns
-		- **StackPanel** – vertical or horizontal stacking
-		- **DockPanel** – dock controls to top, bottom, left, right, or fill
-	- Question: When would you choose each layout?
-- **Common Controls:**
-	- Button
-	- TextBlock (display text)
-	- TextBox (user input)
-	- ListView (display collections)
-	- Later: CheckBox, RadioButton, etc.
--
-- **Customization:**
-	- Control appearance can be modified using Styles and Templates
--
-- **Resources for Learning:**
+  → The goal is to help everyone finish the milestone so you can **enjoy the 3-day weekend**
   
-  [WPF: How to create and apply a style](https://learn.microsoft.com/en-us/dotnet/desktop/wpf/controls/how-to-create-apply-style?view=netdesktop-8.0)
+  **No class next Friday (October 17)**
   
   ---
-- # Starting Milestone 5
+- ## This Week
   
-  **Project Setup:**
-	- How to add a new project?
-	- How to change the startup project?
-- **Sample GUI Review:**
-	- Examine the sample GUI
-	- Predict what it will do when it runs
-- Note missing functionality for now:
-	- Correct display of order subtotal, total, and tax
-	- Editing menu items
-	- Showing additional information about items
-	- Back to Menu / Cancel Order / Complete Order buttons
-	  
-	  ---
-- # Building the Menu Control
+  **Friday:** Milestone 5 due
   
-  **Considerations:**
-	- What layout should you use? Grid, StackPanel, or DockPanel?
-	- What controls are needed?
-	- How will this affect spacing of other components?
-- ---
-- # Building the Order Control
+  → See demo
   
-  **Considerations:**
-	- What layout should you use?
-	- What controls are needed?
-- ---
-- # MainWindow Layout
+  ---
+- ## Types of Layouts
+- **StackPanel** – arranges elements in a single line (vertical or horizontal)
+- **DockPanel** – docks elements to the top, bottom, left, or right; the last added element fills the remaining space
+- **Grid** – organizes elements in rows and columns
   
-  **Tasks:**
-	- How to position the menu and order summary
-	- How to place buttons at the bottom
-	  
-	  **Adding a Custom Control:**
-	  
-	  ```
-	  <local:YourControlClass Grid.Row="0" Grid.Column="1"></local:YourControlClass>
-	  ```
--
-	- Can specify layout properties such as `Grid.Row`, etc.
-	  
-	  ---
-- # Understanding DataContext
+  **→ When should you use each?**
   
-  **Concept:**
-	- DataContext provides the source for data binding
-	- Example: `ObservableCollection<IMenuItem>`
-	- **DataContext** is a **property** available on most WPF/XAML UI elements.
-	- It holds a **reference to an object** that serves as the **data source** for bindings within that element (and its children).
-	- When you set the DataContext, all `{Binding}` expressions inside that element look for their data in that object by default.
-	-
-	- **Order Control:**
-		- Should contain a `ListView`
-		- Questions to consider:
-			- What should the DataContext be?
-			- Where should it be set?
-			  
-			  ```
-			  <ListView ItemsSource="{Binding}"/>
-			  ```
--
-	- What does `{Binding}` mean?
-		- In C# XAML, **binding** connects a UI element’s property to a data source so that the UI automatically reflects changes in the data and vice versa. In the example `<ListView ItemsSource="{Binding}"/>`, the `{Binding}` expression tells the ListView to use the **current DataContext** (usually an object or collection) as its source. This means the ListView will display the items from whatever collection the DataContext represents, without needing explicit code to populate it. Binding is central to the **MVVM pattern**, enabling separation between the UI and underlying data logic.
-	-
-- ---
+  ---
+- ## Creating the Menu Control
+- What kind of **layout** will you use?
+- What kinds of **controls** will you have?
+- Do you need to worry about **spacing** for other components?
+  
+  ---
+- ## Creating the Order Control
+- What kind of **layout** will you use?
+- What kinds of **controls** will you have?
+- This control should include a **ListView**
+  
+  ```
+  <ListView ItemsSource="{Binding}"/>
+  ```
+  
+  **Question:** What does the `"Binding"` mean?
+  
+  ---
+- ## Creating the Main Window
+- How should you lay out the **menu** and the **order summary**?
+- How can you place the **buttons at the bottom**?
+  
+  **Adding a custom control:**
+  
+  ```
+  <local:YourControlClass/>
+  ```
+  
+  You can specify properties such as `Grid.Row`, `Grid.Column`, etc., as usual.
+  
+  ---
+- ## DataContext
+- What is `DataContext`?
+- How does it work?
+- Where do we set it?
+  
+  We’ll use an **ObservableCollection<IMenuItem>**, typically set in the **MainWindow constructor**.
+  
+  ---
+- ## Handling Button Clicks
+  
+  How can we add items to the collection when a button is clicked?
+- Assign **names** to all menu buttons in the XAML.
+- Use a single **event handler** for all button clicks.
+  
+  Example:
+  
+  ```
+  private void ClickEventHandler(object sender, RoutedEventArgs e)
+  {
+    // sender is the button that triggered the event
+    if (sender is Button b)
+    {
+        if (DataContext is ObservableCollection<IMenuItem> order)
+        {
+            if (b.Name == "CustomSandwichCtrl")
+            {
+                order.Add(new CustomSandwich());
+            }
+        }
+    }
+  }
+  ```
+  
+  ---
+  
+  Would you like me to make it **slightly more instructor-scripted** (e.g., adding short discussion prompts or “ask students” cues) or keep it in this **clean lecture-note format**?
