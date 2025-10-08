@@ -17,7 +17,6 @@ collapsed:: true
 	- This **Friday:** Milestone 5 due
 	  ---
 - ## Today
-  collapsed:: true
 	- ## Layouts
 	  collapsed:: true
 		- **StackPanel**
