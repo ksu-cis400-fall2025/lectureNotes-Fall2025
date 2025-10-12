@@ -29,7 +29,7 @@ collapsed:: true
 	-
 - ## When to Invoke  `PropertyChanged`
 	- You must raise `PropertyChanged` for any property whose value changes due to an operation:
-	  | Action |  Properties to Update |
+	- |**Action |  **Properties to Update** |
 	  |**Add item**|  `Total`, `Subtotal`, `Tax` |
 	  |**Remove item** | `Total`, `Subtotal`, `Tax`|
 	  |**Clear order** | `Total`, `Subtotal`, `Tax`|
