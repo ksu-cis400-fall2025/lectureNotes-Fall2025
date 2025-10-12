@@ -60,30 +60,31 @@ collapsed:: true
 		  public DateTime PlacedAt { get; } = DateTime.Now;
 		  ```
 - ## INotifyCollectionChanged
-  ```
-  public event NotifyCollectionChangedEventHandler? CollectionChanged;
-  ```
-  
-  This is an **event handler**.
-- When a collection is bound to a `ListView`, WPF automatically listens for `CollectionChanged` events.
-- It attaches its own handler to redraw the GUI when the collection changes.
-  
-  You must invoke:
-  
-  ```
-  CollectionChanged?.Invoke(...)
-  ```
-  
-  **In the `Order` class:**
-  
-  Call `CollectionChanged` in the following methods:
-- `Add()`
-- `Remove()`
-- `Clear()`
-  
-  (See **Data Binding Tutorial 1** for examples.)
-  
-  ---
+  collapsed:: true
+	- ```
+	  public event NotifyCollectionChangedEventHandler? CollectionChanged;
+	  ```
+	  
+	  This is an **event handler**.
+	- When a collection is bound to a `ListView`, WPF automatically listens for `CollectionChanged` events.
+	- It attaches its own handler to redraw the GUI when the collection changes.
+	  
+	  You must invoke:
+	  
+	  ```
+	  CollectionChanged?.Invoke(...)
+	  ```
+	  
+	  **In the `Order` class:**
+	  
+	  Call `CollectionChanged` in the following methods:
+	- `Add()`
+	- `Remove()`
+	- `Clear()`
+	  
+	  (See **Data Binding Tutorial 1** for examples.)
+	  
+	  ---
 - ## Implementation Summary
   collapsed:: true
 	- ### In  `Order` :
