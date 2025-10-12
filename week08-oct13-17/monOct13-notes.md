@@ -115,9 +115,10 @@ collapsed:: true
 	  
 	  ---
 - ## Cancel Order Button
+  collapsed:: true
 	- ### How to Implement
 	  
-	  In XAML:
+	  In XAML (possible solution):
 	  
 	  ```
 	  <Button Click="CancelOrderClick" Content="Cancel Order" />
