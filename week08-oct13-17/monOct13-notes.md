@@ -41,29 +41,24 @@ collapsed:: true
 			- Different controls *can* have different `DataContexts`.
 			- If a control doesn’t define its own, it *inherits* the `DataContext` of its parent container.
 - ## Order Properties
-- ### Number Property
-  
-  Goal:
-- First order → 1
-- Next order → 2, and so on
-  
-  Implementation:
-  
-  ```
-  private static uint _nextOrderNum = 1;
-  private uint _number = _nextOrderNum++; // ++ happens after initialization
-  public uint Number => _number;
-  ```
-- ### PlacedAt Property
-- Type: `DateTime`
-- Get-only
-- Initialized to the current time
-  
-  ```
-  public DateTime PlacedAt { get; } = DateTime.Now;
-  ```
-  
-  ---
+	- ### Number Property
+		- Goal:
+			- First order → 1
+			- Next order → 2, and so on
+			- Implementation:
+			- ```
+			  private static uint _nextOrderNum = 1;
+			  private uint _number = _nextOrderNum++; // ++ happens after initialization
+			  public uint Number => _number;
+			  ```
+	- ### PlacedAt Property
+		- Type: `DateTime`
+		- Get-only
+		- Initialized to the current time
+		- ```
+		  public DateTime PlacedAt { get; } = DateTime.Now;
+		  ```
+- ---
 - ## INotifyCollectionChanged
   
   ```
