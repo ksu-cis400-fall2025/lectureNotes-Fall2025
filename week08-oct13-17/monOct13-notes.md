@@ -69,25 +69,23 @@ collapsed:: true
 	- **event** it's an important keyword in C#
 	- **CollectionChanged** is a property that will hold a reference to a method
 	- This is an **event handler**.
-	- When a collection is bound to a `ListView`, WPF automatically listens for `CollectionChanged` events.
-	- It attaches its own handler to redraw the GUI when the collection changes.
-	  
-	  You must invoke: (See DataBinding Tutorial)
-	  
-	  ```
+	-
+	- You must invoke: (See DataBinding Tutorial)
+	- ```
 	  CollectionChanged?.Invoke(...)
 	  ```
-		-
-		- **In the `Order` class:**
-		  
-		  Call `CollectionChanged` in the following methods:
-		- `Add()`
-		- `Remove()`
-		- `Clear()`
-		  
-		  (See **Data Binding Tutorial 1** for examples.)
-		  
-		  ---
+	-
+	- **In the `Order` class:**
+	  
+	  Call `CollectionChanged` in the following methods:
+	- `Add()`
+	- `Remove()`
+	- `Clear()`
+	- When a collection is bound to a `ListView`, WPF automatically listens for `CollectionChanged` events.
+	- It attaches its own handler to redraw the GUI when the collection changes.
+	- (See **Data Binding Tutorial 1** for examples.)
+	  
+	  ---
 - ## Implementation Summary
   collapsed:: true
 	- ### In  `Order` :
