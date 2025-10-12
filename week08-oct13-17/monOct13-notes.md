@@ -1,4 +1,5 @@
 ## Announcements
+collapsed:: true
 	- **Data Binding Part 1**: **Due tonight**
 		- ⚠️ Note: There’s a mistake when handling *Remove* in the tutorial.
 		  Please read the Canvas assignment for the correction.
@@ -6,8 +7,8 @@
 	- **Milestone 6**: **Due Thursday**
 		- If you need an extra day, let me know by Thursday and I’ll move your deadline to Friday.
 	- **No class on Friday**
-- ---
 - ## Milestone 6 Overview
+  collapsed:: true
 	- **Demo:** Let's see Milestone 6 demo.
 	- **Summary:**
 	- Use **Order** as the `DataContext` (requires some modifications to the `Order` class).
@@ -15,24 +16,22 @@
 	- **Subtotal**, **tax**, and **total** update automatically as items are added.
 	- **Cancel Order** button is implemented.
 	- **Remove Item** functionality is implemented.
-- ---
 - ## Data Binding
 - ### Concept
-  
-  **Idea:** The front-end display is *bound* to back-end data — changing one automatically updates the other.
-- ### How It Works
-- Each **control** has a `DataContext`.
-- An attribute of a control can be *bound* to a property within that control’s `DataContext`.
-  
-  Examples:
-  
-  ```
-  Text="{Binding PropertyName}"
-  Text="{Binding Path=PropertyName}"
-  ItemsSource="{Binding}"  <!-- if DataContext is IEnumerable -->
-  ```
-  
-  Behavior:
+	- **Idea:** The front-end display is *bound* to back-end data — changing one automatically updates the other.
+	- #### How It Works
+		- Each **control** has a `DataContext`.
+		- An attribute of a control can be *bound* to a property within that control’s `DataContext`.
+		  
+		  Examples:
+		  
+		  ```
+		  Text="{Binding PropertyName}"
+		  Text="{Binding Path=PropertyName}"
+		  ItemsSource="{Binding}"  <!-- if DataContext is IEnumerable -->
+		  ```
+		  
+		  Behavior:
 - The control looks for `PropertyName` in its `DataContext`.
 - If found → displays its value.
 - If not found → displays nothing (no error).
