@@ -136,7 +136,7 @@ collapsed:: true
 	  
 	  ---
 - ## Displaying Items in Order Summary
-  collapsed:: true
+	- Displaying name/price/remove capability of each item in Order Summary
 	- Example layout:
 	  
 	  ```
@@ -152,6 +152,7 @@ collapsed:: true
 	    </ListView.ItemTemplate>
 	  </ListView>
 	  ```
+	-
 	- ### Remove Button Event
 	  
 	  In code-behind:
