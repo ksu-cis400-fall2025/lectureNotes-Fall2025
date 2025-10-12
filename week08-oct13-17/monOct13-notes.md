@@ -8,17 +8,14 @@
 	- **No class on Friday**
 - ---
 - ## Milestone 6 Overview
-  
-  **Demo:** See Milestone 6 demo in class.
-  
-  **Summary:**
-- Use **Order** as the `DataContext` (requires some modifications to the `Order` class).
-- Display the **name** and **price** of each menu item in the order summary.
-- **Subtotal**, **tax**, and **total** update automatically as items are added.
+	- **Demo:** Let's see Milestone 6 demo.
+	- **Summary:**
+	- Use **Order** as the `DataContext` (requires some modifications to the `Order` class).
+	- Display the **name** and **price** of each menu item in the order summary.
+	- **Subtotal**, **tax**, and **total** update automatically as items are added.
 	- **Cancel Order** button is implemented.
 	- **Remove Item** functionality is implemented.
-	  
-	  ---
+- ---
 - ## Data Binding
 - ### Concept
   
