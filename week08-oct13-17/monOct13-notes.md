@@ -17,32 +17,29 @@ collapsed:: true
 	- **Cancel Order** button is implemented.
 	- **Remove Item** functionality is implemented.
 - ## Data Binding
-- ### Concept
-	- **Idea:** The front-end display is *bound* to back-end data — changing one automatically updates the other.
-	- #### How It Works
-		- Each **control** has a `DataContext`.
-		- An attribute of a control can be *bound* to a property within that control’s `DataContext`.
-		  
-		  Examples:
-		  
-		  ```
-		  Text="{Binding PropertyName}"
-		  Text="{Binding Path=PropertyName}"
-		  ItemsSource="{Binding}"  <!-- if DataContext is IEnumerable -->
-		  ```
-		  
-		  Behavior:
-- The control looks for `PropertyName` in its `DataContext`.
-- If found → displays its value.
-- If not found → displays nothing (no error).
-  
-  **Note:**
-  
-  Different controls *can* have different `DataContexts`.
-  
-  If a control doesn’t define its own, it *inherits* the `DataContext` of its parent container.
-  
-  ---
+  collapsed:: true
+	- ### Concept
+	  collapsed:: true
+		- **Idea:** The front-end display is *bound* to back-end data — changing one automatically updates the other.
+		- #### How It Works
+			- Each **control** has a `DataContext`.
+			- An attribute of a control can be *bound* to a property within that control’s `DataContext`.
+			  
+			  Examples:
+			  
+			  ```
+			  Text="{Binding PropertyName}"
+			  Text="{Binding Path=PropertyName}"
+			  ItemsSource="{Binding}"  <!-- if DataContext is IEnumerable -->
+			  ```
+			  
+			  Behavior:
+			- The control looks for `PropertyName` in its `DataContext`.
+			- If found → displays its value.
+			- If not found → displays nothing (no error).
+			- **Note:**
+			- Different controls *can* have different `DataContexts`.
+			- If a control doesn’t define its own, it *inherits* the `DataContext` of its parent container.
 - ## Order Properties
 - ### Number Property
   
