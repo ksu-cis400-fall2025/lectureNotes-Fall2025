@@ -60,7 +60,6 @@ collapsed:: true
 		  public DateTime PlacedAt { get; } = DateTime.Now;
 		  ```
 - ## INotifyCollectionChanged
-  
   ```
   public event NotifyCollectionChangedEventHandler? CollectionChanged;
   ```
@@ -86,51 +85,54 @@ collapsed:: true
   
   ---
 - ## Implementation Summary
-- ### In  `Order` :
-- Add the `Number` and `PlacedAt` properties.
-- Implement `INotifyCollectionChanged`.
-- Invoke `CollectionChanged` in `Add`, `Remove`, and `Clear`.
-- ### In  `MainWindow` :
-- Set the `DataContext` to a new instance of `Order`.
-- ### In Order Summary XAML:
-  
-  Bind elements like this:
-  
-  ```
-  <TextBlock Text="{Binding Number, StringFormat='Order number: {0}'}" />
-  <TextBlock Text="{Binding PlacedAt, StringFormat='Placed at: {0}'}" />
-  <TextBlock Text="{Binding Subtotal, StringFormat='Subtotal: {0:C}'}" />
-  <TextBlock Text="{Binding Tax, StringFormat='Tax: {0:C}'}" />
-  <TextBlock Text="{Binding Total, StringFormat='Total: {0:C}'}" />
-  ```
-  
-  **In Menu Selection Code-Behind:**
-- Treat the `DataContext` as an `Order` object.
-- When done, you’ll have the same behavior as Milestone 5, but now **Order number**, **date**, and **subtotal/tax/total** come directly from `Order`.
-- Note: Subtotal, tax, and total will initially show `$0.00` until `Order` also implements `INotifyPropertyChanged`.
-  
-  ---
+  collapsed:: true
+	- ### In  `Order` :
+	- Add the `Number` and `PlacedAt` properties.
+	- Implement `INotifyCollectionChanged`.
+	- Invoke `CollectionChanged` in `Add`, `Remove`, and `Clear`.
+	- ### In  `MainWindow` :
+		- Set the `DataContext` to a new instance of `Order`.
+	- ### In Order Summary XAML:
+	  
+	  Bind elements like this:
+	  
+	  ```
+	  <TextBlock Text="{Binding Number, StringFormat='Order number: {0}'}" />
+	  <TextBlock Text="{Binding PlacedAt, StringFormat='Placed at: {0}'}" />
+	  <TextBlock Text="{Binding Subtotal, StringFormat='Subtotal: {0:C}'}" />
+	  <TextBlock Text="{Binding Tax, StringFormat='Tax: {0:C}'}" />
+	  <TextBlock Text="{Binding Total, StringFormat='Total: {0:C}'}" />
+	  ```
+	  
+	  **In Menu Selection Code-Behind:**
+	- Treat the `DataContext` as an `Order` object.
+	- When done, you’ll have the same behavior as Milestone 5, but now **Order number**, **date**, and **subtotal/tax/total** come directly from `Order`.
+	- Note: Subtotal, tax, and total will initially show `$0.00` until `Order` also implements `INotifyPropertyChanged`.
+	  
+	  ---
 - ## Cancel Order Button
-- ### How to Implement
-  
-  In XAML:
-  
-  ```
-  <Button Click="CancelOrderClick" Content="Cancel Order" />
-  ```
-  
-  In code-behind:
-  
-  ```
-  private void CancelOrderClick(object sender, RoutedEventArgs e)
-  {
-    if (DataContext is Order o)
-        o.Clear();
-  }
-  ```
-  
-  ---
+  collapsed:: true
+	- ### How to Implement
+	  
+	  In XAML:
+	  
+	  ```
+	  <Button Click="CancelOrderClick" Content="Cancel Order" />
+	  ```
+	  
+	  In code-behind:
+	  
+	  ```
+	  private void CancelOrderClick(object sender, RoutedEventArgs e)
+	  {
+	    if (DataContext is Order o)
+	        o.Clear();
+	  }
+	  ```
+	  
+	  ---
 - ## Displaying Items in Order Summary
+  collapsed:: true
 	- Example layout:
 	  
 	  ```
@@ -146,19 +148,19 @@ collapsed:: true
 	    </ListView.ItemTemplate>
 	  </ListView>
 	  ```
-- ### Remove Button Event
-  
-  In code-behind:
-  
-  ```
-  private void RemoveItemClick(object sender, RoutedEventArgs e)
-  {
-    if (DataContext is Order o && sender is Button b && b.DataContext is IMenuItem item)
-        o.Remove(item);
-  }
-  ```
-  
-  ---
+	- ### Remove Button Event
+	  
+	  In code-behind:
+	  
+	  ```
+	  private void RemoveItemClick(object sender, RoutedEventArgs e)
+	  {
+	    if (DataContext is Order o && sender is Button b && b.DataContext is IMenuItem item)
+	        o.Remove(item);
+	  }
+	  ```
+	  
+	  ---
 - ## Coming Next
   collapsed:: true
 	- **Wednesday:** Implementing `INotifyPropertyChanged`
