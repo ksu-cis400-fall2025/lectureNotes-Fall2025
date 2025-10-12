@@ -17,6 +17,7 @@ collapsed:: true
 	- **Cancel Order** button is implemented.
 	- **Remove Item** functionality is implemented.
 - ## Data Binding
+  collapsed:: true
 	- **Idea:** The front-end display is *bound* to back-end data — changing one automatically updates the other.
 	- #### How It Works
 		- Each **control** has a `DataContext`.
@@ -26,24 +27,26 @@ collapsed:: true
 		  
 		  ```
 		  Text="{Binding PropertyName}"
+		  ///or
 		  Text="{Binding Path=PropertyName}"
-		  ItemsSource="{Binding}"  <!-- if DataContext is IEnumerable -->
+		  //or
+		  if DataContext is IEnumerable:
+		     ItemsSource="{Binding}"
 		  ```
-		  
-		  Behavior:
+		-
+		- Behavior:
 		- The control looks for `PropertyName` in its `DataContext`.
-		- If found → displays its value.
-		- If not found → displays nothing (no error).
+			- If found → displays its value.
+			- If not found → displays nothing (no error).
 		- **Note:**
-		- Different controls *can* have different `DataContexts`.
-		- If a control doesn’t define its own, it *inherits* the `DataContext` of its parent container.
+			- Different controls *can* have different `DataContexts`.
+			- If a control doesn’t define its own, it *inherits* the `DataContext` of its parent container.
 - ## Order Properties
-  collapsed:: true
 	- ### Number Property
 		- Goal:
 			- First order → 1
 			- Next order → 2, and so on
-			- Implementation:
+			- Posile Solution:
 			- ```
 			  private static uint _nextOrderNum = 1;
 			  private uint _number = _nextOrderNum++; // ++ happens after initialization
