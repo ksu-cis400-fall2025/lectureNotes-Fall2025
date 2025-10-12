@@ -62,12 +62,13 @@ collapsed:: true
 		  public DateTime PlacedAt { get; } = DateTime.Now;
 		  ```
 - ## INotifyCollectionChanged
-  collapsed:: true
 	- ```
+	  //from INotifyCollectionChanged interface
 	  public event NotifyCollectionChangedEventHandler? CollectionChanged;
 	  ```
-	  
-	  This is an **event handler**.
+	-
+	- This is an **event handler**.
+	-
 	- When a collection is bound to a `ListView`, WPF automatically listens for `CollectionChanged` events.
 	- It attaches its own handler to redraw the GUI when the collection changes.
 	  
