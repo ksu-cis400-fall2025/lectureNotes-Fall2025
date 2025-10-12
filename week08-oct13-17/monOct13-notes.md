@@ -131,22 +131,21 @@ collapsed:: true
   
   ---
 - ## Displaying Items in Order Summary
-  
-  Example layout:
-  
-  ```
-  <ListView HorizontalContentAlignment="Stretch" ItemsSource="{Binding}">
-    <ListView.ItemTemplate>
-        <DataTemplate>
-            <StackPanel Orientation="Horizontal" HorizontalAlignment="Stretch">
-                <TextBlock Text="{Binding Name}" Width="100"/>
-                <TextBlock Text="{Binding Price, StringFormat={}{0:C}}" Width="80"/>
-                <Button Content="Remove" Click="RemoveItemClick"/>
-            </StackPanel>
-        </DataTemplate>
-    </ListView.ItemTemplate>
-  </ListView>
-  ```
+	- Example layout:
+	  
+	  ```
+	  <ListView HorizontalContentAlignment="Stretch" ItemsSource="{Binding}">
+	    <ListView.ItemTemplate>
+	        <DataTemplate>
+	            <StackPanel Orientation="Horizontal" HorizontalAlignment="Stretch">
+	                <TextBlock Text="{Binding Name}" Width="100"/>
+	                <TextBlock Text="{Binding Price, StringFormat={}{0:C}}" Width="80"/>
+	                <Button Content="Remove" Click="RemoveItemClick"/>
+	            </StackPanel>
+	        </DataTemplate>
+	    </ListView.ItemTemplate>
+	  </ListView>
+	  ```
 - ### Remove Button Event
   
   In code-behind:
@@ -161,9 +160,7 @@ collapsed:: true
   
   ---
 - ## Coming Next
+  collapsed:: true
 	- **Wednesday:** Implementing `INotifyPropertyChanged`
-	- In `Add`, `Remove`, and `Clear`, you’ll invoke `PropertyChanged` to notify that
-	  
-	  `Subtotal`, `Tax`, and `Total` might have changed.
-	  
+	- In `Add`, `Remove`, and `Clear`, you’ll invoke` PropertyChanged` to notify that` Subtotal`, `Tax`, and `Total` might have changed.
 	  ---
