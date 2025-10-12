@@ -1,17 +1,12 @@
 ## Announcements
-- **Data Binding Part 1**: **Due tonight**
-  
-  ⚠️ Note: There’s a mistake when handling *Remove* in the tutorial.
-  
-  Please read the Canvas assignment for the correction.
-- **Data Binding Part 2**: **Due Tuesday**
-- **Milestone 6**: **Due Thursday**
-  
-  
-  If you need an extra day, let me know by Thursday and I’ll move your deadline to Friday.
-- **No class on Friday**
-  
-  ---
+	- **Data Binding Part 1**: **Due tonight**
+		- ⚠️ Note: There’s a mistake when handling *Remove* in the tutorial.
+		  Please read the Canvas assignment for the correction.
+	- **Data Binding Part 2**: **Due Tuesday**
+	- **Milestone 6**: **Due Thursday**
+		- If you need an extra day, let me know by Thursday and I’ll move your deadline to Friday.
+	- **No class on Friday**
+- ---
 - ## Milestone 6 Overview
   
   **Demo:** See Milestone 6 demo in class.
@@ -20,10 +15,10 @@
 - Use **Order** as the `DataContext` (requires some modifications to the `Order` class).
 - Display the **name** and **price** of each menu item in the order summary.
 - **Subtotal**, **tax**, and **total** update automatically as items are added.
-- **Cancel Order** button is implemented.
-- **Remove Item** functionality is implemented.
-  
-  ---
+	- **Cancel Order** button is implemented.
+	- **Remove Item** functionality is implemented.
+	  
+	  ---
 - ## Data Binding
 - ### Concept
   
