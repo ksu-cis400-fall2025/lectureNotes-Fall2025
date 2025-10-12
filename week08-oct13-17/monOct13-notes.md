@@ -67,8 +67,8 @@ collapsed:: true
 	  public event NotifyCollectionChangedEventHandler? CollectionChanged;
 	  ```
 	- **event** it's an important keyword in C#
+	- **CollectionChanged** is a property that will hold a reference to a method
 	- This is an **event handler**.
-	-
 	- When a collection is bound to a `ListView`, WPF automatically listens for `CollectionChanged` events.
 	- It attaches its own handler to redraw the GUI when the collection changes.
 	  
