@@ -72,22 +72,22 @@ collapsed:: true
 	- When a collection is bound to a `ListView`, WPF automatically listens for `CollectionChanged` events.
 	- It attaches its own handler to redraw the GUI when the collection changes.
 	  
-	  You must invoke:
+	  You must invoke: (See DataBinding Tutorial)
 	  
 	  ```
 	  CollectionChanged?.Invoke(...)
 	  ```
-	  
-	  **In the `Order` class:**
-	  
-	  Call `CollectionChanged` in the following methods:
-	- `Add()`
-	- `Remove()`
-	- `Clear()`
-	  
-	  (See **Data Binding Tutorial 1** for examples.)
-	  
-	  ---
+		-
+		- **In the `Order` class:**
+		  
+		  Call `CollectionChanged` in the following methods:
+		- `Add()`
+		- `Remove()`
+		- `Clear()`
+		  
+		  (See **Data Binding Tutorial 1** for examples.)
+		  
+		  ---
 - ## Implementation Summary
   collapsed:: true
 	- ### In  `Order` :
