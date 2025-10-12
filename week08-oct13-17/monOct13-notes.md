@@ -88,6 +88,7 @@ collapsed:: true
 	  
 	  ---
 - ## What to do in SubHero?
+  collapsed:: true
 	- ### In  `Order` :
 		- Add the `Number` and `PlacedAt` properties.
 		- Implement `INotifyCollectionChanged`.
@@ -108,12 +109,12 @@ collapsed:: true
 	-
 	- **In Menu Selection Code-Behind:**
 		- Treat the `DataContext` as an `Order` object.
+		-
 	- When done, you’ll have the same behavior as Milestone 5, but now **Order number**, **date**, and **subtotal/tax/total** come directly from `Order`.
 	- Note: Subtotal, tax, and total will initially show `$0.00` until `Order` also implements `INotifyPropertyChanged`.
 	  
 	  ---
 - ## Cancel Order Button
-  collapsed:: true
 	- ### How to Implement
 	  
 	  In XAML:
