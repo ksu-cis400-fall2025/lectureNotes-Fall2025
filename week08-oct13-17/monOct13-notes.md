@@ -42,6 +42,7 @@ collapsed:: true
 			- Different controls *can* have different `DataContexts`.
 			- If a control doesn’t define its own, it *inherits* the `DataContext` of its parent container.
 - ## Order Properties
+  collapsed:: true
 	- ### Number Property
 		- Goal:
 			- First order → 1
@@ -50,6 +51,7 @@ collapsed:: true
 			- ```
 			  private static uint _nextOrderNum = 1;
 			  private uint _number = _nextOrderNum++; // ++ happens after initialization
+			  //In Number property
 			  public uint Number => _number;
 			  ```
 	- ### PlacedAt Property
