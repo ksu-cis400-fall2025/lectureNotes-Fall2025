@@ -1,14 +1,8 @@
-## CIS400 Weekly Notes
-- ### Deadlines and Upcoming Work
-- **Milestone 6:** Due **Thursday**
-  
-  → Let me know by Thursday if you need an extra day.
-- **Next week’s module:** Available **Thursday**
-  
-  → Tutorials next **Monday** and **Tuesday**
-  
-  
-  ---
+## Announcements
+	- **Milestone 6:** Due tomorrow **Thursday**
+		- Let me know by Thursday 5:00pm if you need an extra day.
+	- **Next week’s module:** Available **Thursday**
+		- Tutorials next **Monday** and **Tuesday**
 - ### Updating the Order Summary
   
   The goal:
