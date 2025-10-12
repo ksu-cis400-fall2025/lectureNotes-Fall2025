@@ -41,6 +41,7 @@ collapsed:: true
 			- Different controls *can* have different `DataContexts`.
 			- If a control doesn’t define its own, it *inherits* the `DataContext` of its parent container.
 - ## Order Properties
+  collapsed:: true
 	- ### Number Property
 		- Goal:
 			- First order → 1
@@ -58,7 +59,6 @@ collapsed:: true
 		- ```
 		  public DateTime PlacedAt { get; } = DateTime.Now;
 		  ```
-- ---
 - ## INotifyCollectionChanged
   
   ```
@@ -105,16 +105,9 @@ collapsed:: true
   ```
   
   **In Menu Selection Code-Behind:**
-  
-  Treat the `DataContext` as an `Order` object.
-  
-  When done, you’ll have the same behavior as Milestone 5,
-  
-  but now **Order number**, **date**, and **subtotal/tax/total** come directly from `Order`.
-  
-  > 
-  
-  Note: Subtotal, tax, and total will initially show `$0.00` until `Order` also implements `INotifyPropertyChanged`.
+- Treat the `DataContext` as an `Order` object.
+- When done, you’ll have the same behavior as Milestone 5, but now **Order number**, **date**, and **subtotal/tax/total** come directly from `Order`.
+- Note: Subtotal, tax, and total will initially show `$0.00` until `Order` also implements `INotifyPropertyChanged`.
   
   ---
 - ## Cancel Order Button
@@ -168,10 +161,9 @@ collapsed:: true
   
   ---
 - ## Coming Next
-  
-  **Wednesday:** Implementing `INotifyPropertyChanged`
-- In `Add`, `Remove`, and `Clear`, you’ll invoke `PropertyChanged` to notify that
-  
-  `Subtotal`, `Tax`, and `Total` might have changed.
-  
-  ---
+	- **Wednesday:** Implementing `INotifyPropertyChanged`
+	- In `Add`, `Remove`, and `Clear`, you’ll invoke `PropertyChanged` to notify that
+	  
+	  `Subtotal`, `Tax`, and `Total` might have changed.
+	  
+	  ---
