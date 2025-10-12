@@ -105,9 +105,9 @@ collapsed:: true
 	  <TextBlock Text="{Binding Tax, StringFormat='Tax: {0:C}'}" />
 	  <TextBlock Text="{Binding Total, StringFormat='Total: {0:C}'}" />
 	  ```
-	  
-	  **In Menu Selection Code-Behind:**
-	- Treat the `DataContext` as an `Order` object.
+	-
+	- **In Menu Selection Code-Behind:**
+		- Treat the `DataContext` as an `Order` object.
 	- When done, you’ll have the same behavior as Milestone 5, but now **Order number**, **date**, and **subtotal/tax/total** come directly from `Order`.
 	- Note: Subtotal, tax, and total will initially show `$0.00` until `Order` also implements `INotifyPropertyChanged`.
 	  
