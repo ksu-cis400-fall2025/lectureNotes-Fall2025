@@ -17,7 +17,7 @@ collapsed:: true
 	- **Cancel Order** button is implemented.
 	- **Remove Item** functionality is implemented.
 - ## Data Binding
-	- ### Concept**Idea:** The front-end display is *bound* to back-end data — changing one automatically updates the other.
+	- **Idea:** The front-end display is *bound* to back-end data — changing one automatically updates the other.
 	- #### How It Works
 		- Each **control** has a `DataContext`.
 		- An attribute of a control can be *bound* to a property within that control’s `DataContext`.
