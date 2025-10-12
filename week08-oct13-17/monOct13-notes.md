@@ -62,6 +62,7 @@ collapsed:: true
 		  public DateTime PlacedAt { get; } = DateTime.Now;
 		  ```
 - ## INotifyCollectionChanged
+  collapsed:: true
 	- ```
 	  //from INotifyCollectionChanged interface
 	  public event NotifyCollectionChangedEventHandler? CollectionChanged;
@@ -70,7 +71,7 @@ collapsed:: true
 	- **CollectionChanged** is a property that will hold a reference to a method
 	- This is an **event handler**.
 	-
-	- You must invoke: (See DataBinding Tutorial)
+	- You must invoke:
 	- ```
 	  CollectionChanged?.Invoke(...)
 	  ```
@@ -78,20 +79,19 @@ collapsed:: true
 	- **In the `Order` class:**
 	  
 	  Call `CollectionChanged` in the following methods:
-	- `Add()`
-	- `Remove()`
-	- `Clear()`
+		- `Add()`
+		- `Remove()`
+		- `Clear()`
 	- When a collection is bound to a `ListView`, WPF automatically listens for `CollectionChanged` events.
 	- It attaches its own handler to redraw the GUI when the collection changes.
 	- (See **Data Binding Tutorial 1** for examples.)
 	  
 	  ---
-- ## Implementation Summary
-  collapsed:: true
+- ## What to do in SubHero?
 	- ### In  `Order` :
-	- Add the `Number` and `PlacedAt` properties.
-	- Implement `INotifyCollectionChanged`.
-	- Invoke `CollectionChanged` in `Add`, `Remove`, and `Clear`.
+		- Add the `Number` and `PlacedAt` properties.
+		- Implement `INotifyCollectionChanged`.
+		- Invoke `CollectionChanged` in `Add`, `Remove`, and `Clear`.
 	- ### In  `MainWindow` :
 		- Set the `DataContext` to a new instance of `Order`.
 	- ### In Order Summary XAML:
