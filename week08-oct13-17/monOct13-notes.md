@@ -106,7 +106,7 @@ collapsed:: true
 	  ```
 	-
 	- **In Menu Selection Code-Behind:**
-		- Treat the `DataContext` as an `Order` object.
+		- Treat the `DataContext` as an `Order` object. (remember to use an if-statement)
 		-
 	- When done, you’ll have the same behavior as Milestone 5, but now **Order number**, **date**, and **subtotal/tax/total** come directly from `Order`.
 	- Note: Subtotal, tax, and total will initially show `$0.00` until `Order` also implements `INotifyPropertyChanged`.
