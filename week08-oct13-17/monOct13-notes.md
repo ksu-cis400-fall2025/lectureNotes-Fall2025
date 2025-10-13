@@ -85,7 +85,6 @@ collapsed:: true
 	  
 	  ---
 - ## What to do in SubHero?
-  collapsed:: true
 	- ### In  `Order` :
 		- Add the `Number` and `PlacedAt` properties.
 		- Implement `INotifyCollectionChanged`.
