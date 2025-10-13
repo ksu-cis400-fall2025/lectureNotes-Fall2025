@@ -87,6 +87,7 @@ collapsed:: true
 	  
 	  ---
 - ## What to do in SubHero?
+  collapsed:: true
 	- ### In  `Order` :
 		- Add the `Number` and `PlacedAt` properties.
 		- Implement `INotifyCollectionChanged`.
@@ -113,7 +114,6 @@ collapsed:: true
 	  
 	  ---
 - ## Cancel Order Button
-  collapsed:: true
 	- ### How to Implement
 	  
 	  In XAML (possible solution):
