@@ -42,6 +42,7 @@ collapsed:: true
 			- Different controls *can* have different `DataContexts`.
 			- If a control doesn’t define its own, it *inherits* the `DataContext` of its parent container.
 - ## Order Properties
+  collapsed:: true
 	- ### Number Property
 		- Goal:
 			- First order → 1
@@ -61,7 +62,6 @@ collapsed:: true
 		  public DateTime PlacedAt { get; } = DateTime.Now;
 		  ```
 - ## INotifyCollectionChanged
-  collapsed:: true
 	- ```
 	  //from INotifyCollectionChanged interface
 	  public event NotifyCollectionChangedEventHandler? CollectionChanged;
