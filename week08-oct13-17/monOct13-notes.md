@@ -112,7 +112,6 @@ collapsed:: true
 	  
 	  ---
 - ## Cancel Order Button
-  collapsed:: true
 	- ### How to Implement
 	  
 	  In XAML (possible solution):
@@ -133,7 +132,6 @@ collapsed:: true
 	  
 	  ---
 - ## Displaying Items in Order Summary
-  collapsed:: true
 	- Displaying name/price/remove capability of each item in Order Summary
 	- Example layout:
 	  
@@ -165,7 +163,6 @@ collapsed:: true
 	  
 	  ---
 - ## Coming Next
-  collapsed:: true
 	- **Wednesday:** Implementing `INotifyPropertyChanged`
 	- In `Add`, `Remove`, and `Clear`, you’ll invoke` PropertyChanged` to notify that` Subtotal`, `Tax`, and `Total` might have changed.
 	  ---
