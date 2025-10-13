@@ -1,5 +1,4 @@
 ## Announcements
-collapsed:: true
 	- **Data Binding Part 1**: **Due tonight**
 		- Note: There’s a mistake when handling *Remove* in the tutorial.
 		  Please read the Canvas assignment for the correction.
