@@ -8,7 +8,6 @@ collapsed:: true
 		- If you need an extra day, let me know by Thursday and I’ll move your deadline to Friday.
 	- **No class on Friday**
 - ## Milestone 6 Overview
-  collapsed:: true
 	- **Demo:** Let's see Milestone 6 demo.
 	- **Summary:**
 	- Use **Order** as the `DataContext` (requires some modifications to the `Order` class).
