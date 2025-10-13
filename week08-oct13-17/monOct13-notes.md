@@ -168,6 +168,7 @@ collapsed:: true
 	  
 	  ---
 - ## Coming Next
+  collapsed:: true
 	- **Wednesday:** Implementing `INotifyPropertyChanged`
 	- In `Add`, `Remove`, and `Clear`, you’ll invoke` PropertyChanged` to notify that` Subtotal`, `Tax`, and `Total` might have changed.
 	  ---
