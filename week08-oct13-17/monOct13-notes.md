@@ -17,6 +17,7 @@ collapsed:: true
 	- **Cancel Order** button is implemented.
 	- **Remove Item** functionality is implemented.
 - ## Data Binding -re-visit
+  collapsed:: true
 	- **Idea:** The front-end display is *bound* to back-end data — changing one automatically updates the other.
 	- #### How It Works
 		- Each **control** has a `DataContext`.
@@ -41,7 +42,6 @@ collapsed:: true
 			- Different controls *can* have different `DataContexts`.
 			- If a control doesn’t define its own, it *inherits* the `DataContext` of its parent container.
 - ## Order Properties
-  collapsed:: true
 	- ### Number Property
 		- Goal:
 			- First order → 1
