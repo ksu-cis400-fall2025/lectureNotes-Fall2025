@@ -8,6 +8,7 @@ collapsed:: true
 		- If you need an extra day, let me know by Thursday and I’ll move your deadline to Friday.
 	- **No class on Friday**
 - ## Milestone 6 Overview
+  collapsed:: true
 	- **Demo:** Let's see Milestone 6 demo.
 	- **Summary:**
 	- Use **Order** as the `DataContext` (requires some modifications to the `Order` class).
@@ -15,7 +16,7 @@ collapsed:: true
 	- **Subtotal**, **tax**, and **total** update automatically as items are added.
 	- **Cancel Order** button is implemented.
 	- **Remove Item** functionality is implemented.
-- ## Data Binding
+- ## Data Binding -re-visit
   collapsed:: true
 	- **Idea:** The front-end display is *bound* to back-end data — changing one automatically updates the other.
 	- #### How It Works
@@ -41,7 +42,6 @@ collapsed:: true
 			- Different controls *can* have different `DataContexts`.
 			- If a control doesn’t define its own, it *inherits* the `DataContext` of its parent container.
 - ## Order Properties
-  collapsed:: true
 	- ### Number Property
 		- Goal:
 			- First order → 1
