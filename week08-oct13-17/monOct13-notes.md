@@ -1,4 +1,5 @@
 ## Announcements
+collapsed:: true
 	- **Data Binding Part 1**: **Due tonight**
 		- Note: There’s a mistake when handling *Remove* in the tutorial.
 		  Please read the Canvas assignment for the correction.
@@ -7,7 +8,6 @@
 		- If you need an extra day, let me know by Thursday and I’ll move your deadline to Friday.
 	- **No class on Friday**
 - ## Milestone 6 Overview
-  collapsed:: true
 	- **Demo:** Let's see Milestone 6 demo.
 	- **Summary:**
 	- Use **Order** as the `DataContext` (requires some modifications to the `Order` class).
