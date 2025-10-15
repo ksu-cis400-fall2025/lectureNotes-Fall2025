@@ -35,6 +35,5 @@ collapsed:: true
 	  |**Change `TaxRate`** |`Tax`, `Total`, `TaxRate` |
 	-
 - ## Clarification: “Cancel Order” Button
-  collapsed:: true
 	- The **Cancel Order** button should **call `Clear()`** on the order.
 	- The **order number does not change** when an order is cleared.
