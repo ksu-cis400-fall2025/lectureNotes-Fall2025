@@ -5,7 +5,6 @@ collapsed:: true
 	- **Next week’s module:** Available tomorrow **Thursday**
 		- Tutorials: Next **Monday** and **Tuesday**
 - ## Updating the Order Summary
-  collapsed:: true
 	- The goal:
 		- Update **Subtotal**, **Tax**, and **Total** automatically as items are **added** or **removed**.
 	- #### Key Concept:  `INotifyPropertyChanged`
@@ -28,7 +27,6 @@ collapsed:: true
 		- If a control uses **data binding** with the affected property, it will **automatically re-render** when the property changes.
 	-
 - ## When to Invoke  `PropertyChanged`
-  collapsed:: true
 	- You must raise `PropertyChanged` for any property whose value changes due to an operation:
 	- |**Action** |  **Properties to Update** |
 	  |**Add item**|  `Total`, `Subtotal`, `Tax` |
