@@ -1,6 +1,6 @@
-# Announcements
+## Announcements
 collapsed:: true
-	- ### **Due Dates**
+	- ### Due Dates:
 	- **Monday:** Swapping Controls and Custom Events Tutorial.
 	- **Tuesday:** Custom Controls and Resources Tutorial.
 	- **Friday:** Milestone 7.
@@ -18,25 +18,24 @@ collapsed:: true
 	  
 	  ---
 - ## Steps: Sending a Message Between Controls
-  collapsed:: true
-	- ### **Step 1: Define What Needs to Be Sent**
+	- ### Step 1: Define What Needs to Be Sent
 	- Decide what information, if any, needs to be passed.
 	- If information is needed:
 	- Create a **custom event args class** that extends `RoutedEventArgs`.
 	- Include the necessary info as a property.
-	- ### **Step 2: Declare the Event**
+	- ### Step 2: Declare the Event
 	- In the class where the action occurs:
 	- ```
 	  public event EventHandler<CustomArgType>? EventName;
 	  ```
 	  
 	  If no data is needed, use `RoutedEventArgs` as the type.
-	- ### **Step 3: Raise (Invoke) the Event**
+	- ### Step 3: Raise (Invoke) the Event
 	- Whenever the action occurs:
 	- ```
 	  EventName?.Invoke(this, new CustomArgType(params));
 	  ```
-	- ### **Step 4: Handle the Event**
+	- ### Step 4: Handle the Event
 	- In the class where the result should occur:
 	- ```
 	  private void HandleCustomEvent(object? sender, CustomArgType e)
@@ -44,7 +43,7 @@ collapsed:: true
 	    // respond to the event
 	  }
 	  ```
-	- ### **Step 5: Attach the Handler**
+	- ### Step 5: Attach the Handler
 	- In that same class, attach your event handler:
 	- ```
 	  ControlName.EventName += HandleCustomEvent;
