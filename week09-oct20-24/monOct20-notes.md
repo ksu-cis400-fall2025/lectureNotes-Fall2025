@@ -8,6 +8,7 @@
   
   ---
 - ## **Swapping Controls and Custom Events**
+  collapsed:: true
 	- One of the tricky parts in this milestone is **swapping controls**.
 	- You will have several controls pre-loaded into the area where the menu appears.
 	- Different actions will update their **Visibility**—only one should be visible at a time.
@@ -16,48 +17,38 @@
 	  
 	  ---
 - ## **Steps: Sending a Message Between Controls**
-- ### **Step 1: Define What Needs to Be Sent**
-  
-  Decide what information, if any, needs to be passed.
-  
-  If information is needed:
-- Create a **custom event args class** that extends `RoutedEventArgs`.
-- Include the necessary info as a property.
-- ### **Step 2: Declare the Event**
-  
-  In the class where the action occurs:
-  
-  ```
-  public event EventHandler<CustomArgType>? EventName;
-  ```
-  
-  If no data is needed, use `RoutedEventArgs` as the type.
-- ### **Step 3: Raise (Invoke) the Event**
-  
-  Whenever the action occurs:
-  
-  ```
-  EventName?.Invoke(this, new CustomArgType(params));
-  ```
-- ### **Step 4: Handle the Event**
-  
-  In the class where the result should occur:
-  
-  ```
-  private void HandleCustomEvent(object? sender, CustomArgType e)
-  {
-    // respond to the event
-  }
-  ```
-- ### **Step 5: Attach the Handler**
-  
-  In that same class, attach your event handler:
-  
-  ```
-  ControlName.EventName += HandleCustomEvent;
-  ```
-  
-  ---
+  collapsed:: true
+	- ### **Step 1: Define What Needs to Be Sent**
+	- Decide what information, if any, needs to be passed.
+	- If information is needed:
+	- Create a **custom event args class** that extends `RoutedEventArgs`.
+	- Include the necessary info as a property.
+	- ### **Step 2: Declare the Event**
+	- In the class where the action occurs:
+	- ```
+	  public event EventHandler<CustomArgType>? EventName;
+	  ```
+	  
+	  If no data is needed, use `RoutedEventArgs` as the type.
+	- ### **Step 3: Raise (Invoke) the Event**
+	- Whenever the action occurs:
+	- ```
+	  EventName?.Invoke(this, new CustomArgType(params));
+	  ```
+	- ### **Step 4: Handle the Event**
+	- In the class where the result should occur:
+	- ```
+	  private void HandleCustomEvent(object? sender, CustomArgType e)
+	  {
+	    // respond to the event
+	  }
+	  ```
+	- ### **Step 5: Attach the Handler**
+	- In that same class, attach your event handler:
+	- ```
+	  ControlName.EventName += HandleCustomEvent;
+	  ```
+	  ---
 - ## **Example: Sending Data Between Controls**
 - `MainWindow` has a `TextBlock` named **ColorText** and a user-defined **ColorControl**.
 - `ColorControl` includes two buttons: **RedButton** and **BlueButton**.
