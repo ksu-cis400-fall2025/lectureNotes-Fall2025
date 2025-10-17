@@ -1,8 +1,8 @@
-# **CIS400 Weekly Notes**
+# Announcements
 - ### **Due Dates**
-- **Swapping Controls and Custom Events Tutorial:** Due **Monday**
-- **Custom Controls and Resources Tutorial:** Due **Tuesday**
-- **Milestone 7:** Due **Friday**
+- **Monday:** Swapping Controls and Custom Events Tutorial.
+- **Tuesday:** Custom Controls and Resources Tutorial.
+- **Friday:** Milestone 7.
   
   → A quick overview video of Milestone 7’s behavior is available in Canvas.
   
