@@ -8,18 +8,13 @@
   
   ---
 - ## **Swapping Controls and Custom Events**
-  
-  One of the tricky parts in this milestone is **swapping controls**.
-  
-  You will have several controls pre-loaded into the area where the menu appears.
-  
-  Different actions will update their **Visibility**—only one should be visible at a time.
-  
-  When a user clicks a menu button (in the **Menu Selection Control**), it should display the **Customization Control** for that item (in the **Main Window**).
-  
-  Essentially, this means you need to **send a message from the menu (where the action happens)** to the **MainWindow (where all the controls are stored).**
-  
-  ---
+	- One of the tricky parts in this milestone is **swapping controls**.
+	- You will have several controls pre-loaded into the area where the menu appears.
+	- Different actions will update their **Visibility**—only one should be visible at a time.
+	- When a user clicks a menu button (in the **Menu Selection Control**), it should display the **Customization Control** for that item (in the **Main Window**).
+	- Essentially, this means you need to **send a message from the menu (where the action happens)** to the **MainWindow (where all the controls are stored).**
+	  
+	  ---
 - ## **Steps: Sending a Message Between Controls**
 - ### **Step 1: Define What Needs to Be Sent**
   
