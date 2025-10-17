@@ -23,12 +23,12 @@ collapsed:: true
 		- If information is needed:
 			- Create a **custom event args class** that extends `RoutedEventArgs`.
 			- Include the necessary info as a property.
-		- ### Step 2: Declare the Event
+	- ### Step 2: Declare the Event
 		- In the class where the action occurs:
 		- ```
 		  public event EventHandler<CustomArgType>? EventName;
 		  ```
-		  
+		   
 		  If no data is needed, use `RoutedEventArgs` as the type.
 	- ### Step 3: Raise (Invoke) the Event
 	  collapsed:: true
