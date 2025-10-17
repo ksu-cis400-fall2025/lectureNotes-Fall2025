@@ -1,13 +1,14 @@
 # Announcements
-- ### **Due Dates**
-- **Monday:** Swapping Controls and Custom Events Tutorial.
-- **Tuesday:** Custom Controls and Resources Tutorial.
-- **Friday:** Milestone 7.
-  
-  → A quick overview video of Milestone 7’s behavior is available in Canvas.
-  
-  ---
-- ## **Swapping Controls and Custom Events**
+collapsed:: true
+	- ### **Due Dates**
+	- **Monday:** Swapping Controls and Custom Events Tutorial.
+	- **Tuesday:** Custom Controls and Resources Tutorial.
+	- **Friday:** Milestone 7.
+	  
+	  → A quick overview video of Milestone 7’s behavior is available in Canvas.
+	  
+	  ---
+- ## Swapping Controls and Custom Events
   collapsed:: true
 	- One of the tricky parts in this milestone is **swapping controls**.
 	- You will have several controls pre-loaded into the area where the menu appears.
@@ -16,7 +17,7 @@
 	- Essentially, this means you need to **send a message from the menu (where the action happens)** to the **MainWindow (where all the controls are stored).**
 	  
 	  ---
-- ## **Steps: Sending a Message Between Controls**
+- ## Steps: Sending a Message Between Controls
   collapsed:: true
 	- ### **Step 1: Define What Needs to Be Sent**
 	- Decide what information, if any, needs to be passed.
@@ -49,63 +50,63 @@
 	  ControlName.EventName += HandleCustomEvent;
 	  ```
 	  ---
-- ## **Example: Sending Data Between Controls**
-- `MainWindow` has a `TextBlock` named **ColorText** and a user-defined **ColorControl**.
-- `ColorControl` includes two buttons: **RedButton** and **BlueButton**.
-	- Both have a Click handler called `ClickColor`.
-	  
-	  **Goal:** When the red button is clicked, display “Red” in the `TextBlock` in `MainWindow` (and similarly for blue).
-	  
-	  ---
-- ## **Milestone 7 Example: Menu → MainWindow Communication**
-- We need to send information about which menu item was selected so that the **MainWindow** can display the correct customization control.
-- ### **Custom Event Steps in Milestone 7**
-- **Create a Custom Event Args Class**
-	- Extend `RoutedEventArgs`.
-	- Include the info about the selected item (e.g., an `IMenuItem`).
-- **Declare the Event**
-	- In the **Menu Selection Control**:
-	  
-	  ```
-	  public event EventHandler<CustomEventArgs>? CustomEvent;
-	  ```
-- **Invoke the Event**
-	- In the Click event handler for each menu item:
-	  
-	  ```
-	  if (buttonPressed == ChipsButton)
-	  {
-	   var chips = new Chips();
-	   order.Add(chips);
-	   CustomEvent?.Invoke(this, new CustomEventArgs(chips));
-	  }
-	  ```
-	  
-	  *(The same `Chips` instance should be used both in the order and the event.)*
-- **Handle the Event**
-	- In **MainWindow**:
-	  
-	  ```
-	  private void OnCustomize(object? sender, CustomEventArgs e)
-	  {
-	   // Display the corresponding customization control
-	   // Retrieve the IMenuItem from e
-	   // Use selection logic to make the correct control visible
-	   // Set that control’s DataContext to the IMenuItem
-	   // Hide all other controls (including the menu)
-	  }
-	  ```
-- **Attach the Handler**
-	- In **MainWindow’s constructor**:
-	  
-	  ```
-	  MenuSelectionControl.CustomEvent += OnCustomize;
-	  ```
-	  
-	  *(You’ll need to give the menu selection control a name in the XAML.)*
-	  
-	  ---
-- ## **Recommended Order of Approach**
+- ## Example: Sending Data Between Controls
+  collapsed:: true
+	- `MainWindow` has a `TextBlock` named **ColorText** and a user-defined **ColorControl**.
+	- `ColorControl` includes two buttons: **RedButton** and **BlueButton**.
+		- Both have a Click handler called `ClickColor`.
+		  
+		  **Goal:** When the red button is clicked, display “Red” in the `TextBlock` in `MainWindow` (and similarly for blue).
+		  
+		  ---
+- ## Milestone 7 Example: Menu → MainWindow Communication
+  collapsed:: true
+	- We need to send information about which menu item was selected so that the **MainWindow** can display the correct customization control.
+	- ### **Custom Event Steps in Milestone 7**
+	- **Create a Custom Event Args Class**
+		- Extend `RoutedEventArgs`.
+		- Include the info about the selected item (e.g., an `IMenuItem`).
+	- **Declare the Event**
+		- In the **Menu Selection Control**:
+		  
+		  ```
+		  public event EventHandler<CustomEventArgs>? CustomEvent;
+		  ```
+	- **Invoke the Event**
+		- In the Click event handler for each menu item:
+		  
+		  ```
+		  if (buttonPressed == ChipsButton)
+		  {
+		   var chips = new Chips();
+		   order.Add(chips);
+		   CustomEvent?.Invoke(this, new CustomEventArgs(chips));
+		  }
+		  ```
+		  
+		  *(The same `Chips` instance should be used both in the order and the event.)*
+	- **Handle the Event**
+		- In **MainWindow**:
+		  
+		  ```
+		  private void OnCustomize(object? sender, CustomEventArgs e)
+		  {
+		   // Display the corresponding customization control
+		   // Retrieve the IMenuItem from e
+		   // Use selection logic to make the correct control visible
+		   // Set that control’s DataContext to the IMenuItem
+		   // Hide all other controls (including the menu)
+		  }
+		  ```
+	- **Attach the Handler**
+		- In **MainWindow’s constructor**:
+		  
+		  ```
+		  MenuSelectionControl.CustomEvent += OnCustomize;
+		  ```
+		  *(You’ll need to give the menu selection control a name in the XAML.)*
+		  ---
+- ## Recommended Order of Approach
   collapsed:: true
 	- ### **In the Data Project**
 	- Load enums as custom resources (sizes, soda flavors, chip flavors, breads).
@@ -152,7 +153,7 @@
 	  ```
 	  
 	  ---
-- ## **In the PointOfSale Project**
+- ## In the PointOfSale Project
   collapsed:: true
 	- Create a **helper control** with Name, Description, and Calories.
 	- Pick a simple menu item to start with (e.g., **Apple**).
@@ -167,7 +168,7 @@
 	- Only **one Entree Control** is needed — do that part last.
 	  
 	  ---
-- ## **Wednesday Discussion Topics**
+- ## Wednesday Discussion Topics
   collapsed:: true
 	- Entree Control:
 		- Limiting size and bread choices in combo boxes.
