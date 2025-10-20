@@ -60,53 +60,64 @@ collapsed:: true
 		  
 		  ---
 - ## Milestone 7 Example: Menu → MainWindow Communication
-	- We need to send information about which menu item was selected so that the **MainWindow** can display the correct customization control.
-	- ### **Custom Event Steps in Milestone 7**
-	- **Create a Custom Event Args Class**
-		- Extend `RoutedEventArgs`.
-		- Include the info about the selected item (e.g., an `IMenuItem`).
-	- **Declare the Event**
-		- In the **Menu Selection Control**:
-		  
-		  ```
-		  public event EventHandler<CustomEventArgs>? CustomEvent;
-		  ```
-	- **Invoke the Event**
-		- In the Click event handler for each menu item:
-		  
-		  ```
-		  if (buttonPressed == ChipsButton)
-		  {
-		   var chips = new Chips();
-		   order.Add(chips);
-		   CustomEvent?.Invoke(this, new CustomEventArgs(chips));
-		  }
-		  ```
-		  
-		  *(The same `Chips` instance should be used both in the order and the event.)*
-	- **Handle the Event**
-		- In **MainWindow**:
-		  
-		  ```
-		  private void OnCustomize(object? sender, CustomEventArgs e)
-		  {
-		   // Display the corresponding customization control
-		   // Retrieve the IMenuItem from e
-		   // Use selection logic to make the correct control visible
-		   // Set that control’s DataContext to the IMenuItem
-		   // Hide all other controls (including the menu)
-		  }
-		  ```
-	- **Attach the Handler**
-		- In **MainWindow’s constructor**:
-		  
-		  ```
-		  MenuSelectionControl.CustomEvent += OnCustomize;
-		  ```
-		  *(You’ll need to give the menu selection control a name in the XAML.)*
-		  ---
-- ## Recommended Order of Approach
   collapsed:: true
+	- We need to send information about which menu item was selected so that the **MainWindow** can display the correct customization control.
+	- ### Custom Event Steps in Milestone 7
+	  collapsed:: true
+		- collapsed:: true
+		  
+		  **Create a Custom Event Args Class**
+			- Extend `RoutedEventArgs`.
+			- Include the info about the selected item (e.g., an `IMenuItem`).
+		- collapsed:: true
+		  
+		  **Declare the Event**
+			- In the **Menu Selection Control**:
+			  
+			  ```
+			  public event EventHandler<CustomEventArgs>? CustomEvent;
+			  ```
+		- collapsed:: true
+		  
+		  **Invoke the Event**
+			- In the Click event handler for each menu item:
+			  
+			  ```
+			  if (buttonPressed == ChipsButton)
+			  {
+			   var chips = new Chips();
+			   order.Add(chips);
+			   CustomEvent?.Invoke(this, new CustomEventArgs(chips));
+			  }
+			  ```
+			  
+			  *(The same `Chips` instance should be used both in the order and the event.)*
+		- collapsed:: true
+		  
+		  **Handle the Event**
+			- In **MainWindow**:
+			  
+			  ```
+			  private void OnCustomize(object? sender, CustomEventArgs e)
+			  {
+			   // Display the corresponding customization control
+			   // Retrieve the IMenuItem from e
+			   // Use selection logic to make the correct control visible
+			   // Set that control’s DataContext to the IMenuItem
+			   // Hide all other controls (including the menu)
+			  }
+			  ```
+		- collapsed:: true
+		  
+		  **Attach the Handler**
+			- In **MainWindow’s constructor**:
+			  
+			  ```
+			  MenuSelectionControl.CustomEvent += OnCustomize;
+			  ```
+			  *(You’ll need to give the menu selection control a name in the XAML.)*
+			  ---
+- ## Recommended Order of Approach
 	- ### **In the Data Project**
 	- Load enums as custom resources (sizes, soda flavors, chip flavors, breads).
 	- Make sure `IMenuItem` implements **INotifyPropertyChanged**.
