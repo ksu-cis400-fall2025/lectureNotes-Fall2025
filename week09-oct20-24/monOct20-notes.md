@@ -118,6 +118,7 @@ collapsed:: true
 			  *(You’ll need to give the menu selection control a name in the XAML.)*
 			  ---
 - ## Recommended Order of Approach
+  collapsed:: true
 	- ### **In the Data Project**
 	- Load enums as custom resources (sizes, soda flavors, chip flavors, breads).
 	- Make sure `IMenuItem` implements **INotifyPropertyChanged**.
@@ -164,7 +165,6 @@ collapsed:: true
 	  
 	  ---
 - ## In the PointOfSale Project
-  collapsed:: true
 	- Create a **helper control** with Name, Description, and Calories.
 	- Pick a simple menu item to start with (e.g., **Apple**).
 	- Design a **user control** for that item:
