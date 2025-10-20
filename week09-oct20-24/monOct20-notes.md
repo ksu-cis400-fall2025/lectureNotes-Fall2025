@@ -1,5 +1,4 @@
 ## Announcements
-collapsed:: true
 	- ### Due Dates:
 	- **Monday:** Swapping Controls and Custom Events Tutorial.
 	- **Tuesday:** Custom Controls and Resources Tutorial.
