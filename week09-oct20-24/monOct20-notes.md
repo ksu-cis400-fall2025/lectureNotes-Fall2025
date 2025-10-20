@@ -1,4 +1,5 @@
 ## Announcements
+collapsed:: true
 	- ### Due Dates:
 	- **Monday:** Swapping Controls and Custom Events Tutorial.
 	- **Tuesday:** Custom Controls and Resources Tutorial.
@@ -8,7 +9,6 @@
 	  
 	  ---
 - ## Swapping Controls and Custom Events
-  collapsed:: true
 	- One of the tricky parts in this milestone is **swapping controls**.
 	- You will have several controls pre-loaded into the area where the menu appears.
 	- Different actions will update their **Visibility**—only one should be visible at a time.
