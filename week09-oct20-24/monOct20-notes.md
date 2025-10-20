@@ -18,6 +18,7 @@ collapsed:: true
 	  
 	  ---
 - ## Steps: Sending a Message Between Controls
+  collapsed:: true
 	- ### Step 1: Define What Needs to Be Sent
 	  collapsed:: true
 		- Decide what information, if any, needs to be passed.
@@ -33,11 +34,13 @@ collapsed:: true
 		   
 		  If no data is needed, use `RoutedEventArgs` as the type.
 	- ### Step 3: Raise (Invoke) the Event
+	  collapsed:: true
 		- Whenever the action occurs:
 		- ```
 		  EventName?.Invoke(this, new CustomArgType(params));
 		  ```
 	- ### Step 4: Handle the Event
+	  collapsed:: true
 		- In the class where the result should occur:
 		- ```
 		  private void HandleCustomEvent(object? sender, CustomArgType e)
@@ -53,6 +56,7 @@ collapsed:: true
 		  ```
 		  ---
 - ## Example: Sending Data Between Controls
+  collapsed:: true
 	- `MainWindow` has two controls: a `TextBlock` named **ColorText** and a user-defined **ColorControl**.
 	- `ColorControl` includes two buttons: **RedButton** and **BlueButton**.
 		- Both buttons have a Click handler called `ClickColor`.
