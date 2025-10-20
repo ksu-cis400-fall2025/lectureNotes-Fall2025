@@ -18,7 +18,6 @@ collapsed:: true
 	  
 	  ---
 - ## Steps: Sending a Message Between Controls
-  collapsed:: true
 	- ### Step 1: Define What Needs to Be Sent
 		- Decide what information, if any, needs to be passed.
 		- If information is needed:
