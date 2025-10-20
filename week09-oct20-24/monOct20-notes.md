@@ -55,9 +55,9 @@ collapsed:: true
 		  ```
 		  ---
 - ## Example: Sending Data Between Controls
-	- `MainWindow` has a `TextBlock` named **ColorText** and a user-defined **ColorControl**.
+	- `MainWindow` has two controls: a `TextBlock` named **ColorText** and a user-defined **ColorControl**.
 	- `ColorControl` includes two buttons: **RedButton** and **BlueButton**.
-		- Both have a Click handler called `ClickColor`.
+		- Both buttons have a Click handler called `ClickColor`.
 		  
 		  **Goal:** When the red button is clicked, display “Red” in the `TextBlock` in `MainWindow` (and similarly for blue).
 		  
