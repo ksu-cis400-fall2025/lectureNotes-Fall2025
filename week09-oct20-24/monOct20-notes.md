@@ -1,11 +1,10 @@
 ## Announcements
-collapsed:: true
 	- ### Due Dates:
 	- **Monday:** Swapping Controls and Custom Events Tutorial.
 	- **Tuesday:** Custom Controls and Resources Tutorial.
 	- **Friday:** Milestone 7.
 	  
-	  → A quick overview video of Milestone 7’s behavior is available in Canvas.
+	  → A quick overview demo of Milestone 7’s behavior.
 	  
 	  ---
 - ## Swapping Controls and Custom Events
@@ -165,6 +164,7 @@ collapsed:: true
 	  
 	  ---
 - ## In the PointOfSale Project
+  collapsed:: true
 	- Create a **helper control** with Name, Description, and Calories.
 	- Pick a simple menu item to start with (e.g., **Apple**).
 	- Design a **user control** for that item:
