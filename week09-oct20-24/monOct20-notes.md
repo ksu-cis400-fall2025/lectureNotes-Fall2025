@@ -33,13 +33,11 @@ collapsed:: true
 		   
 		  If no data is needed, use `RoutedEventArgs` as the type.
 	- ### Step 3: Raise (Invoke) the Event
-	  collapsed:: true
 		- Whenever the action occurs:
 		- ```
 		  EventName?.Invoke(this, new CustomArgType(params));
 		  ```
 	- ### Step 4: Handle the Event
-	  collapsed:: true
 		- In the class where the result should occur:
 		- ```
 		  private void HandleCustomEvent(object? sender, CustomArgType e)
