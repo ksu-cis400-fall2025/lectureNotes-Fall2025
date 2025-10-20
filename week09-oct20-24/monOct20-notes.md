@@ -65,6 +65,7 @@ collapsed:: true
 		  
 		  ---
 - ## Milestone 7 Example: Menu → MainWindow Communication
+  collapsed:: true
 	- We need to send information about which menu item was selected so that the **MainWindow** can display the correct customization control.
 	- ### Custom Event Steps in Milestone 7
 	  collapsed:: true
