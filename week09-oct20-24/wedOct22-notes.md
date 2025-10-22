@@ -39,6 +39,7 @@ collapsed:: true
 	  
 	  ---
 - ## Entree – Custom Bread and Size Options
+  collapsed:: true
 	- ### Goal
 		- Allow each entrée to define which **breads** and **sizes** are available.
 	- ### Step 1: Define Dictionaries
