@@ -10,14 +10,14 @@ collapsed:: true
 	- How can the **Order** properties (Subtotal, Tax, Total) automatically update when an item is customized?
 	- ### Step 1: Attach a PropertyChanged Handler
 	  
-	  When you add an item to the order:
+	  In Add, attach to item's PropertyChanged:
 	  
 	  ```
 	  item.PropertyChanged += HandleOrderChanges;
 	  ```
 	- ### Step 2: Implement the Event Handler
 	  
-	  Write the `HandleOrderChanges` method:
+	  Then, write the `HandleOrderChanges` method:
 	  
 	  ```
 	  private void HandleOrderChanges(object sender, PropertyChangedEventArgs e)
@@ -39,7 +39,6 @@ collapsed:: true
 	  
 	  ---
 - ## Entree – Custom Bread and Size Options
-  collapsed:: true
 	- ### Goal
 		- Allow each entrée to define which **breads** and **sizes** are available.
 	- ### Step 1: Define Dictionaries
