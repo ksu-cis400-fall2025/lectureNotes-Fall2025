@@ -39,6 +39,7 @@ collapsed:: true
 	  
 	  ---
 - ## Entree – Custom Bread and Size Options
+  collapsed:: true
 	- ### Goal
 		- Allow each entrée to define which **breads** and **sizes** are available.
 	- ### Step 1: Define Dictionaries
@@ -75,7 +76,6 @@ collapsed:: true
 	  
 	  ---
 - ## Using These Options in the Point of Sale
-  collapsed:: true
 	- ### In the Entree Customization Control
 	- Add **ComboBoxes** for bread and size selections.
 	- Set:
