@@ -1,5 +1,4 @@
 ## Announcements
-collapsed:: true
 	- ### Milestone 7 – Due Friday
 	  
 	  See **Monday’s notes** for a suggested order of approach.
