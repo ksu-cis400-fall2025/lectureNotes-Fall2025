@@ -76,6 +76,7 @@ collapsed:: true
 	  
 	  ---
 - ## Using These Options in the Point of Sale
+  collapsed:: true
 	- ### In the Entree Customization Control
 	- Add **ComboBoxes** for bread and size selections.
 	- Set:
@@ -85,7 +86,7 @@ collapsed:: true
 	  
 	  When either the **bread** or **size** changes:
 	- Raise a `PropertyChanged` event to indicate that the corresponding options have been updated.
-		- If `Size` changes → `BreadOptions` may change.
-		- If `Bread` changes → `SizeOptions` may change.
+		- If `Size` changes → `BreadOptions` have changed.
+		- If `Bread` changes → `SizeOptions` have changed.
 		  
 		  ---
