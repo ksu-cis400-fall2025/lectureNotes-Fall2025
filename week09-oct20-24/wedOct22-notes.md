@@ -1,4 +1,5 @@
 ## Announcements
+collapsed:: true
 	- ### Milestone 7 – Due Friday
 	  
 	  See **Monday’s notes** for a suggested order of approach.
@@ -40,8 +41,7 @@
 - ## Entree – Custom Bread and Size Options
   collapsed:: true
 	- ### Goal
-	  
-	  Allow each entrée to define which **breads** and **sizes** are available.
+		- Allow each entrée to define which **breads** and **sizes** are available.
 	- ### Step 1: Define Dictionaries
 	  
 	  Add two private fields in your `Entree` class:
@@ -72,7 +72,7 @@
 	  public IEnumerable<SizeType> SizeOptions => _sizesByBreadChoice[CurrentBread];
 	  ```
 	  
-	  (Students should implement these using the dictionaries above.)
+	  (You should implement these using the dictionaries above.)
 	  
 	  ---
 - ## Using These Options in the Point of Sale
