@@ -1,10 +1,10 @@
 ## Announcements
+collapsed:: true
 	- ### Milestone 7 – Due Friday
 	  
 	  See **Monday’s notes** for a suggested order of approach.
 	  ---
 - ## Updating the Order When Items Are Customized
-  collapsed:: true
 	- ### Problem
 	- How can the **Order** properties (Subtotal, Tax, Total) automatically update when an item is customized?
 	- ### Step 1: Attach a PropertyChanged Handler
