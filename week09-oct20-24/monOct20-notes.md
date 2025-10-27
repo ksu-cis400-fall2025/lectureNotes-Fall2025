@@ -185,6 +185,7 @@ collapsed:: true
 	  
 	  ---
 - ## Wednesday Discussion Topics
+  collapsed:: true
 	- Entree Control:
 		- Limiting size and bread choices in combo boxes.
 	- Updating subtotal, tax, and total dynamically when items are customized.
