@@ -1,5 +1,4 @@
 ## Announcements
-collapsed:: true
 	- Exam 2 — Wednesday, November 12
 	  collapsed:: true
 		- **Format:**
@@ -8,10 +7,10 @@ collapsed:: true
 			- 50 minutes in length
 	- ### Deadlines and Reminders
 		- All tutorials and milestones **since Exam 1** must be submitted **by Friday, November 14** for any partial credit.
-	- This **Friday** is a work day.
-	- **Next week:** begin working on **Razor Pages**.
-	  
-	  ---
+		- This **Friday** is a work day.
+		- **Next week:** begin working on **Razor Pages**.
+		  
+		  ---
 - ## Exam Format
   collapsed:: true
 	- **Mix:** multiple choice, open-ended and coding questions.
