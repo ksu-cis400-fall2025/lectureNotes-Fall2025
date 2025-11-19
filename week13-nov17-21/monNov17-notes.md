@@ -1,5 +1,4 @@
 ## Announcements
-collapsed:: true
 	- ### Deadlines and Remind
 		- **Today:** Tutorial 1 **Intro to Razor Pages**.
 			- Create a new ASP.NET Core project.
@@ -12,7 +11,8 @@ collapsed:: true
 		  
 		  ---
 	- ### Exam 2
-		- Quickly Review the Solution
+	  collapsed:: true
+		- Quickly Review on Wednesday
 		  
 		  
 		  
@@ -20,6 +20,7 @@ collapsed:: true
 - ## Begin Razor Pages
   collapsed:: true
 	- ### What Are Razor Pages?
+	  collapsed:: true
 		- Razor Pages allow you to inject C# code into HTML to create dynamic web pages.
 		- You will need to add a **new ASP.NET Core Web App** project.
 			- If prompted, select **“Install more tools and features”** when adding the new project.
@@ -31,6 +32,7 @@ collapsed:: true
 			- Or, from the **File** menu option
 			- ---
 	- ### Additional Notes
+	  collapsed:: true
 		- ### Creating a New Project
 			- Choose **ASP.NET Core Web App** (not MVC), so the project is cross-platform.
 			- ### Checking Your .NET Version
@@ -42,6 +44,7 @@ collapsed:: true
 - ## Milestone 10
   collapsed:: true
 	- ### Goal
+	  collapsed:: true
 		- Create a website for **SubHero** that includes:
 		- collapsed:: true
 		  
@@ -112,16 +115,6 @@ collapsed:: true
 	- `Sides`
 	- `Drinks`
 	- `Combos`
-	- ### Useful Patterns / Snippets
-	  
-	  ```
-	  (someList).AddRange(someIEnumerable);
-	  ```
-	  
-	  ```
-	  Apple a = new() { Sliced = true };
-	  _sides.Add(a);
-	  ```
 - ## Wednesday's Class
   collapsed:: true
 	- Discussion of **testing** and **UML** for the milestone.
